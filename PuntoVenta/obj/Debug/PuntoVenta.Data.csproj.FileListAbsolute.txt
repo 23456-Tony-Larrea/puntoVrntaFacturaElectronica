@@ -1,0 +1,2 @@
+D:\punto de venta x arreglar\POSales\PuntoVenta\obj\Debug\PuntoVenta.Data.csproj.AssemblyReference.cache
+D:\punto de venta x arreglar\POSales\PuntoVenta\obj\Debug\PuntoVenta.Data.csproj.CoreCompileInputs.cache
