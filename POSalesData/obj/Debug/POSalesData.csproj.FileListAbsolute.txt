@@ -1,0 +1,8 @@
+C:\Users\WORLD06\Desktop\puntoVentaFacturacion\solucion\POSalesData\obj\Debug\POSalesData.csproj.CoreCompileInputs.cache
+C:\Users\WORLD06\Desktop\puntoVentaFacturacion\solucion\POSalesData\bin\Debug\POSalesData.dll
+C:\Users\WORLD06\Desktop\puntoVentaFacturacion\solucion\POSalesData\bin\Debug\POSalesData.pdb
+C:\Users\WORLD06\Desktop\puntoVentaFacturacion\solucion\POSalesData\bin\Debug\Dapper.dll
+C:\Users\WORLD06\Desktop\puntoVentaFacturacion\solucion\POSalesData\bin\Debug\Dapper.xml
+C:\Users\WORLD06\Desktop\puntoVentaFacturacion\solucion\POSalesData\obj\Debug\POSalesData.csproj.CopyComplete
+C:\Users\WORLD06\Desktop\puntoVentaFacturacion\solucion\POSalesData\obj\Debug\POSalesData.dll
+C:\Users\WORLD06\Desktop\puntoVentaFacturacion\solucion\POSalesData\obj\Debug\POSalesData.pdb
