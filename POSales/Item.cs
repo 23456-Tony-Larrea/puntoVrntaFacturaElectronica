@@ -35,6 +35,7 @@ namespace POSales
 
         private void dgvBodega_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
             string colName = dgvItem.Columns[e.ColumnIndex].Name;
             if (colName == "Edit")
             {
@@ -76,10 +77,17 @@ namespace POSales
                 item.txtCatB.Text = dgvItem.Rows[e.RowIndex].Cells["categoriaB"].Value.ToString();
                 item.txtCatC.Text = dgvItem.Rows[e.RowIndex].Cells["categoriaC"].Value.ToString();
                 item.txtCatD.Text = dgvItem.Rows[e.RowIndex].Cells["categoriaD"].Value.ToString();
+                item.txtCatE.Text = dgvItem.Rows[e.RowIndex].Cells["categoriaE"].Value.ToString();
+                item.picItem.Visible = false;
+                item.picBrowse.Visible = false;
+                item.btnSave.Enabled = false;
                 item.ShowDialog();
+            
+            
             }
             else if (colName == "Delete")
             {
+                dgvItem.DataSource = null;
                 if (MessageBox.Show("Estas seguro de eliminar este Item?", "Eliminar Item", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
@@ -89,6 +97,7 @@ namespace POSales
                     MessageBox.Show("Item eliminado con exito.", "POS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+            cargarItem();
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {

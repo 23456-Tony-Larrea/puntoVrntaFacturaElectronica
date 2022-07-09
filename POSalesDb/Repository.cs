@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading.Tasks;
 using Dapper;
 
 namespace POSalesDb
@@ -55,14 +56,35 @@ namespace POSalesDb
 
 
             }
-            public void UpdateItems<T>(T items)
-            {
-                var props = typeof(T).GetProperties(BindingFlags.Instance | BindingFlags.Public).Where(p => p.CanRead && p.CanWrite
-                         ).Select(x => x.Name).ToList();
-                var updateStatement = $"Update Items({string.Join(",", props)})Set ({string.Join(",", props.Select(x => string.Format("WHERE @Id={id}", x)))}) ";
-                int rowsAffected = dbconnection.Execute(updateStatement, items);
-            }
+        
+        //public async Task UpdateAsync(T t)
+        //{
+        //    var updateQuery = GenerateUpdateQuery();
+
+        //    using (var connection = dbconnection)
+        //    {
+        //        await connection.ExecuteAsync(updateQuery, t);
+        //    }
+        //}
+        //private string GenerateUpdateQuery()
+        //{
+        //    var updateQuery = new StringBuilder($"UPDATE Items SET ");
+        //    var properties = GenerateListOfProperties(GetProperties);
+
+        //    properties.ForEach(property =>
+        //    {
+        //        if (!property.Equals("Id"))
+        //        {
+        //            updateQuery.Append($"{property}=@{property},");
+        //        }
+        //    });
+
+        //    updateQuery.Remove(updateQuery.Length - 1, 1); //remove last comma
+        //    updateQuery.Append(" WHERE Id=@Id");
+
+        //    return updateQuery.ToString();
+        //}
 
 
-        }
     }
+}

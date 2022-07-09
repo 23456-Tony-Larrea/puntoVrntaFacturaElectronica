@@ -332,3 +332,5 @@ D:\punto de venta x arreglar\POSales\POSales\obj\Debug\POSales.Item.resources
 D:\punto de venta x arreglar\POSales\POSales\bin\Debug\POSalesDb.dll
 D:\punto de venta x arreglar\POSales\POSales\bin\Debug\POSalesDb.pdb
 D:\punto de venta x arreglar\POSales\POSales\obj\Debug\POSales.FacturaClientes.resources
+D:\punto de venta x arreglar\POSales\POSales\obj\Debug\POSales.ReporteFactura.resources
+D:\punto de venta x arreglar\POSales\POSales\obj\Debug\POSales.Product.resources

@@ -31,8 +31,7 @@ namespace POSales
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelSlide = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnItems = new System.Windows.Forms.Button();
             this.btnWhatsapp = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panelSubSetting = new System.Windows.Forms.Panel();
@@ -76,8 +75,7 @@ namespace POSales
             // 
             this.panelSlide.AllowDrop = true;
             this.panelSlide.AutoScroll = true;
-            this.panelSlide.Controls.Add(this.button1);
-            this.panelSlide.Controls.Add(this.button2);
+            this.panelSlide.Controls.Add(this.btnItems);
             this.panelSlide.Controls.Add(this.btnWhatsapp);
             this.panelSlide.Controls.Add(this.btnLogout);
             this.panelSlide.Controls.Add(this.panelSubSetting);
@@ -96,36 +94,23 @@ namespace POSales
             this.panelSlide.Name = "panelSlide";
             this.panelSlide.Size = new System.Drawing.Size(200, 1011);
             this.panelSlide.TabIndex = 0;
+            this.panelSlide.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSlide_Paint);
             // 
-            // button1
+            // btnItems
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 949);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(179, 45);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Tienda";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 904);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(179, 45);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Usuarios";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnItems.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItems.FlatAppearance.BorderSize = 0;
+            this.btnItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnItems.ForeColor = System.Drawing.Color.White;
+            this.btnItems.Location = new System.Drawing.Point(0, 904);
+            this.btnItems.Name = "btnItems";
+            this.btnItems.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnItems.Size = new System.Drawing.Size(179, 63);
+            this.btnItems.TabIndex = 10;
+            this.btnItems.Text = "Items por mayor";
+            this.btnItems.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnItems.UseVisualStyleBackColor = true;
+            this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
             // 
             // btnWhatsapp
             // 
@@ -149,7 +134,7 @@ namespace POSales
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(0, 994);
+            this.btnLogout.Location = new System.Drawing.Point(0, 967);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnLogout.Size = new System.Drawing.Size(179, 46);
@@ -370,7 +355,7 @@ namespace POSales
             this.btnBrand.FlatAppearance.BorderSize = 0;
             this.btnBrand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBrand.ForeColor = System.Drawing.Color.White;
-            this.btnBrand.Location = new System.Drawing.Point(0, 97);
+            this.btnBrand.Location = new System.Drawing.Point(0, 103);
             this.btnBrand.Name = "btnBrand";
             this.btnBrand.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnBrand.Size = new System.Drawing.Size(179, 45);
@@ -386,7 +371,7 @@ namespace POSales
             this.btnCategory.FlatAppearance.BorderSize = 0;
             this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategory.ForeColor = System.Drawing.Color.White;
-            this.btnCategory.Location = new System.Drawing.Point(0, 52);
+            this.btnCategory.Location = new System.Drawing.Point(0, 58);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnCategory.Size = new System.Drawing.Size(179, 45);
@@ -405,9 +390,9 @@ namespace POSales
             this.btnProductList.Location = new System.Drawing.Point(0, 0);
             this.btnProductList.Name = "btnProductList";
             this.btnProductList.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnProductList.Size = new System.Drawing.Size(179, 52);
+            this.btnProductList.Size = new System.Drawing.Size(179, 58);
             this.btnProductList.TabIndex = 3;
-            this.btnProductList.Text = "Productos Lista";
+            this.btnProductList.Text = "Productos unitarios";
             this.btnProductList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductList.UseVisualStyleBackColor = true;
             this.btnProductList.Click += new System.EventHandler(this.btnProductList_Click);
@@ -585,8 +570,7 @@ namespace POSales
         public System.Windows.Forms.Label lblUsername;
         public System.Windows.Forms.Label lblName;
         public System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnItems;
         private System.Windows.Forms.Button btnWhatsapp;
     }
 }
