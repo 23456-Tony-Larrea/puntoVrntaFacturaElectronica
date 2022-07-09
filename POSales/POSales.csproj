@@ -34,9 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\..\Descargas\Bunifu_UI_v1.52.dll</HintPath>
-    </Reference>
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
     </Reference>
@@ -252,6 +249,12 @@
     <Compile Include="POSReport.Designer.cs">
       <DependentUpon>POSReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductModule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,6 +279,12 @@
     </Compile>
     <Compile Include="Record.Designer.cs">
       <DependentUpon>Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteFactura.Designer.cs">
+      <DependentUpon>ReporteFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="ThemeColor.cs" />
@@ -424,6 +433,9 @@
     <EmbeddedResource Include="POSReport.resx">
       <DependentUpon>POSReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProductModule.resx">
       <DependentUpon>ProductModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -435,6 +447,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Record.resx">
       <DependentUpon>Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteFactura.resx">
+      <DependentUpon>ReporteFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rptCancelled.rdlc" />
     <EmbeddedResource Include="rptInventory.rdlc" />

@@ -80,7 +80,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(675, 95);
+            this.panel1.Size = new System.Drawing.Size(676, 95);
             this.panel1.TabIndex = 5;
             // 
             // label1
@@ -425,7 +425,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 889);
+            this.ClientSize = new System.Drawing.Size(676, 884);
             this.Controls.Add(this.cboRegistrado);
             this.Controls.Add(this.btnImpirmir);
             this.Controls.Add(this.btnGuardarP);

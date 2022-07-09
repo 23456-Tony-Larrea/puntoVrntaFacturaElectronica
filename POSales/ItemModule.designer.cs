@@ -95,7 +95,7 @@ namespace POSales
             this.label27 = new System.Windows.Forms.Label();
             this.picItem = new System.Windows.Forms.PictureBox();
             this.picBrowse = new System.Windows.Forms.PictureBox();
-            this.txtCateA = new System.Windows.Forms.TextBox();
+            this.txtCatA = new System.Windows.Forms.TextBox();
             this.txtCatB = new System.Windows.Forms.TextBox();
             this.txtCatC = new System.Windows.Forms.TextBox();
             this.txtCatD = new System.Windows.Forms.TextBox();
@@ -110,7 +110,7 @@ namespace POSales
             this.chckCombo = new System.Windows.Forms.CheckBox();
             this.chckNegativo = new System.Windows.Forms.CheckBox();
             this.chkGasto = new System.Windows.Forms.CheckBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.valA = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
@@ -743,10 +743,10 @@ namespace POSales
             // 
             // txtCateA
             // 
-            this.txtCateA.Location = new System.Drawing.Point(163, 550);
-            this.txtCateA.Name = "txtCateA";
-            this.txtCateA.Size = new System.Drawing.Size(121, 26);
-            this.txtCateA.TabIndex = 82;
+            this.txtCatA.Location = new System.Drawing.Point(163, 550);
+            this.txtCatA.Name = "txtCateA";
+            this.txtCatA.Size = new System.Drawing.Size(121, 26);
+            this.txtCatA.TabIndex = 82;
             // 
             // txtCatB
             // 
@@ -876,14 +876,14 @@ namespace POSales
             this.chkGasto.Text = "Gasto";
             this.chkGasto.UseVisualStyleBackColor = true;
             // 
-            // textBox23
+            // valA
             // 
-            this.textBox23.Location = new System.Drawing.Point(672, 173);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(95, 26);
-            this.textBox23.TabIndex = 100;
-            this.textBox23.Text = "00,00";
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.valA.Location = new System.Drawing.Point(672, 173);
+            this.valA.Name = "valA";
+            this.valA.Size = new System.Drawing.Size(95, 30);
+            this.valA.TabIndex = 100;
+            this.valA.Text = "00,00";
+            this.valA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox24
             // 
@@ -936,7 +936,7 @@ namespace POSales
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1163, 729);
             this.Controls.Add(this.txtIva);
-            this.Controls.Add(this.textBox23);
+            this.Controls.Add(this.valA);
             this.Controls.Add(this.textBox24);
             this.Controls.Add(this.textBox25);
             this.Controls.Add(this.textBox26);
@@ -951,7 +951,7 @@ namespace POSales
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label31);
-            this.Controls.Add(this.txtCateA);
+            this.Controls.Add(this.txtCatA);
             this.Controls.Add(this.txtCatB);
             this.Controls.Add(this.txtCatC);
             this.Controls.Add(this.txtCatD);
@@ -1106,8 +1106,7 @@ namespace POSales
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.TextBox txtValorIce;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.PictureBox picBrowse;
-        public System.Windows.Forms.TextBox txtCateA;
+        public System.Windows.Forms.TextBox txtCatA;
         public System.Windows.Forms.TextBox txtCatB;
         public System.Windows.Forms.TextBox txtCatC;
         public System.Windows.Forms.TextBox txtCatD;
@@ -1117,7 +1116,7 @@ namespace POSales
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         public System.Windows.Forms.TextBox txtCatE;
-        public System.Windows.Forms.TextBox textBox23;
+        public System.Windows.Forms.TextBox valA;
         public System.Windows.Forms.TextBox textBox24;
         public System.Windows.Forms.TextBox textBox25;
         public System.Windows.Forms.TextBox textBox26;
@@ -1130,5 +1129,6 @@ namespace POSales
         public System.Windows.Forms.CheckBox chkGasto;
         public System.Windows.Forms.PictureBox picItem;
         public System.Windows.Forms.CheckBox HasIva;
+        public System.Windows.Forms.PictureBox picBrowse;
     }
 }

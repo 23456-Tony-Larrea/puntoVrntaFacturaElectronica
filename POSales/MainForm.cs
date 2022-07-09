@@ -86,7 +86,7 @@ namespace POSales
 
         private void btnProductList_Click(object sender, EventArgs e)
         {
-            openChildForm(new Item());
+            openChildForm(new Product());
             hideSubmenu();
         }
 
@@ -200,6 +200,17 @@ namespace POSales
         private void btnWhatsapp_Click(object sender, EventArgs e)
         {
             openChildForm(new WhatsappModule());
+            hideSubmenu();
+        }
+
+        private void panelSlide_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnItems_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Item());
             hideSubmenu();
         }
     }

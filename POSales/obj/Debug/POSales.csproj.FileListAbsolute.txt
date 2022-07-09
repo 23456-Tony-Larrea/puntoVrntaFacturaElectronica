@@ -332,6 +332,7 @@ D:\punto de venta x arreglar\POSales\POSales\obj\Debug\POSales.Item.resources
 D:\punto de venta x arreglar\POSales\POSales\bin\Debug\POSalesDb.dll
 D:\punto de venta x arreglar\POSales\POSales\bin\Debug\POSalesDb.pdb
 D:\punto de venta x arreglar\POSales\POSales\obj\Debug\POSales.FacturaClientes.resources
+<<<<<<< HEAD
 C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSales\obj\Debug\POSales.csproj.AssemblyReference.cache
 C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSales\obj\Debug\POSales.Adjustments.resources
 C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSales\obj\Debug\POSales.Alert.resources
@@ -449,3 +450,10 @@ C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSales\bin
 C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSales\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSales\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSales\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+=======
+D:\punto de venta x arreglar\POSales\POSales\obj\Debug\POSales.ReporteFactura.resources
+D:\punto de venta x arreglar\POSales\POSales\obj\Debug\POSales.Product.resources
+>>>>>>> ac4c86eed17d4e6a5e843bef0038f6cf296442c2
+C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSales\obj\Debug\POSales.Product.resources
+C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSales\obj\Debug\POSales.ReporteFactura.resources
+C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSales\obj\Debug\POSales.csproj.CopyComplete
