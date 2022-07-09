@@ -17,8 +17,8 @@ namespace POSales
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
         string stitle = "Point Of Sales";
-        Product product;
-        public ProductModule(Product pd)
+        Item product;
+        public ProductModule(Item pd)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
@@ -82,7 +82,7 @@ namespace POSales
                     cn.Close();
                     MessageBox.Show("Product has been successfully saved.", stitle);
                     Clear();
-                    product.LoadProduct();
+                    product.cargarItem();
                 }
 
             }

@@ -191,6 +191,12 @@
     <Compile Include="Discount.Designer.cs">
       <DependentUpon>Discount.cs</DependentUpon>
     </Compile>
+    <Compile Include="FacturaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturaClientes.Designer.cs">
+      <DependentUpon>FacturaClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Group.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,12 @@
     </Compile>
     <Compile Include="GroupModule.designer.cs">
       <DependentUpon>GroupModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item.Designer.cs">
+      <DependentUpon>Item.cs</DependentUpon>
     </Compile>
     <Compile Include="ItemModule.cs">
       <SubType>Form</SubType>
@@ -238,12 +250,6 @@
     </Compile>
     <Compile Include="POSReport.Designer.cs">
       <DependentUpon>POSReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Product.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Product.Designer.cs">
-      <DependentUpon>Product.cs</DependentUpon>
     </Compile>
     <Compile Include="ProductModule.cs">
       <SubType>Form</SubType>
@@ -387,11 +393,17 @@
     <EmbeddedResource Include="Discount.resx">
       <DependentUpon>Discount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FacturaClientes.resx">
+      <DependentUpon>FacturaClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Group.resx">
       <DependentUpon>Group.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GroupModule.resx">
       <DependentUpon>GroupModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item.resx">
+      <DependentUpon>Item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemModule.resx">
       <DependentUpon>ItemModule.cs</DependentUpon>
@@ -410,9 +422,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="POSReport.resx">
       <DependentUpon>POSReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Product.resx">
-      <DependentUpon>Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductModule.resx">
       <DependentUpon>ProductModule.cs</DependentUpon>
@@ -500,7 +509,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\POSalesDb\POSalesDb.csproj">
+      <Project>{A529562E-4E8F-4544-9015-A355DD28F112}</Project>
+      <Name>POSalesDb</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Image\Image\add_30px.png" />
     <Content Include="Image\Image\add_new_20px.png" />

@@ -62,8 +62,7 @@ namespace POSales
             this.txtCod4 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.HasIva = new System.Windows.Forms.CheckBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -73,57 +72,58 @@ namespace POSales
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtUnidadCaja = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtPesoItem = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txtReason = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtComision = new System.Windows.Forms.TextBox();
+            this.txtDescMax = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtUnidad = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtCosto = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtStockMax = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtStockMin = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txtValorIce = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.picItem = new System.Windows.Forms.PictureBox();
+            this.picBrowse = new System.Windows.Forms.PictureBox();
+            this.txtCatA = new System.Windows.Forms.TextBox();
+            this.txtCatB = new System.Windows.Forms.TextBox();
+            this.txtCatC = new System.Windows.Forms.TextBox();
+            this.txtCatD = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.txtCatE = new System.Windows.Forms.TextBox();
+            this.chckServicio = new System.Windows.Forms.CheckBox();
+            this.chckAplicaSeries = new System.Windows.Forms.CheckBox();
+            this.chckCombo = new System.Windows.Forms.CheckBox();
+            this.chckNegativo = new System.Windows.Forms.CheckBox();
+            this.chkGasto = new System.Windows.Forms.CheckBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
+            this.txtIce = new System.Windows.Forms.TextBox();
+            this.txtIva = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picItem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBrowse)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSave
@@ -296,6 +296,8 @@ namespace POSales
             this.txtPriceD.Name = "txtPriceD";
             this.txtPriceD.Size = new System.Drawing.Size(194, 30);
             this.txtPriceD.TabIndex = 15;
+            this.txtPriceD.Text = "00,00";
+            this.txtPriceD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
@@ -421,25 +423,15 @@ namespace POSales
             this.button1.Text = "Desg.Iva";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // HasIva
             // 
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(538, 129);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(73, 27);
-            this.button2.TabIndex = 34;
-            this.button2.Text = "Incl.Iva";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(617, 130);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(67, 26);
-            this.checkBox1.TabIndex = 35;
-            this.checkBox1.Text = "IVA";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.HasIva.AutoSize = true;
+            this.HasIva.Location = new System.Drawing.Point(617, 130);
+            this.HasIva.Name = "HasIva";
+            this.HasIva.Size = new System.Drawing.Size(67, 26);
+            this.HasIva.TabIndex = 35;
+            this.HasIva.Text = "IVA";
+            this.HasIva.UseVisualStyleBackColor = true;
             // 
             // label17
             // 
@@ -474,6 +466,8 @@ namespace POSales
             this.txtPriceC.Name = "txtPriceC";
             this.txtPriceC.Size = new System.Drawing.Size(194, 30);
             this.txtPriceC.TabIndex = 41;
+            this.txtPriceC.Text = "00,00";
+            this.txtPriceC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPriceB
             // 
@@ -481,6 +475,8 @@ namespace POSales
             this.txtPriceB.Name = "txtPriceB";
             this.txtPriceB.Size = new System.Drawing.Size(194, 30);
             this.txtPriceB.TabIndex = 42;
+            this.txtPriceB.Text = "00,00";
+            this.txtPriceB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPriceA
             // 
@@ -488,6 +484,9 @@ namespace POSales
             this.txtPriceA.Name = "txtPriceA";
             this.txtPriceA.Size = new System.Drawing.Size(194, 30);
             this.txtPriceA.TabIndex = 43;
+            this.txtPriceA.Text = "00,00";
+            this.txtPriceA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPriceA.TextChanged += new System.EventHandler(this.txtPriceA_TextChanged);
             // 
             // pictureBox1
             // 
@@ -521,12 +520,14 @@ namespace POSales
             this.label22.TabIndex = 48;
             this.label22.Text = "Unidad x caja:";
             // 
-            // textBox9
+            // txtUnidadCaja
             // 
-            this.textBox9.Location = new System.Drawing.Point(162, 402);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(122, 30);
-            this.textBox9.TabIndex = 49;
+            this.txtUnidadCaja.Location = new System.Drawing.Point(162, 402);
+            this.txtUnidadCaja.Name = "txtUnidadCaja";
+            this.txtUnidadCaja.Size = new System.Drawing.Size(122, 30);
+            this.txtUnidadCaja.TabIndex = 49;
+            this.txtUnidadCaja.Text = "0";
+            this.txtUnidadCaja.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label23
             // 
@@ -538,12 +539,14 @@ namespace POSales
             this.label23.TabIndex = 50;
             this.label23.Text = "Peso Item:";
             // 
-            // textBox10
+            // txtPesoItem
             // 
-            this.textBox10.Location = new System.Drawing.Point(162, 433);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(122, 30);
-            this.textBox10.TabIndex = 51;
+            this.txtPesoItem.Location = new System.Drawing.Point(162, 433);
+            this.txtPesoItem.Name = "txtPesoItem";
+            this.txtPesoItem.Size = new System.Drawing.Size(122, 30);
+            this.txtPesoItem.TabIndex = 51;
+            this.txtPesoItem.Text = "0,00";
+            this.txtPesoItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox3
             // 
@@ -585,19 +588,23 @@ namespace POSales
             this.label10.TabIndex = 57;
             this.label10.Text = "Comision:";
             // 
-            // textBox5
+            // txtComision
             // 
-            this.textBox5.Location = new System.Drawing.Point(162, 456);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(122, 30);
-            this.textBox5.TabIndex = 58;
+            this.txtComision.Location = new System.Drawing.Point(162, 456);
+            this.txtComision.Name = "txtComision";
+            this.txtComision.Size = new System.Drawing.Size(122, 30);
+            this.txtComision.TabIndex = 58;
+            this.txtComision.Text = "0,00";
+            this.txtComision.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox11
+            // txtDescMax
             // 
-            this.textBox11.Location = new System.Drawing.Point(162, 484);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(122, 30);
-            this.textBox11.TabIndex = 60;
+            this.txtDescMax.Location = new System.Drawing.Point(162, 484);
+            this.txtDescMax.Name = "txtDescMax";
+            this.txtDescMax.Size = new System.Drawing.Size(122, 30);
+            this.txtDescMax.TabIndex = 60;
+            this.txtDescMax.Text = "0,00";
+            this.txtDescMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label20
             // 
@@ -609,12 +616,14 @@ namespace POSales
             this.label20.TabIndex = 59;
             this.label20.Text = "Desc.Max:";
             // 
-            // textBox12
+            // txtUnidad
             // 
-            this.textBox12.Location = new System.Drawing.Point(459, 484);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(122, 30);
-            this.textBox12.TabIndex = 68;
+            this.txtUnidad.Location = new System.Drawing.Point(459, 484);
+            this.txtUnidad.Name = "txtUnidad";
+            this.txtUnidad.Size = new System.Drawing.Size(122, 30);
+            this.txtUnidad.TabIndex = 68;
+            this.txtUnidad.Text = "0";
+            this.txtUnidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label21
             // 
@@ -626,12 +635,14 @@ namespace POSales
             this.label21.TabIndex = 67;
             this.label21.Text = "Unidad:";
             // 
-            // textBox13
+            // txtCosto
             // 
-            this.textBox13.Location = new System.Drawing.Point(459, 456);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(122, 30);
-            this.textBox13.TabIndex = 66;
+            this.txtCosto.Location = new System.Drawing.Point(459, 456);
+            this.txtCosto.Name = "txtCosto";
+            this.txtCosto.Size = new System.Drawing.Size(122, 30);
+            this.txtCosto.TabIndex = 66;
+            this.txtCosto.Text = "00,00";
+            this.txtCosto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label24
             // 
@@ -643,12 +654,14 @@ namespace POSales
             this.label24.TabIndex = 65;
             this.label24.Text = "Costo:";
             // 
-            // textBox14
+            // txtStockMax
             // 
-            this.textBox14.Location = new System.Drawing.Point(459, 433);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(122, 30);
-            this.textBox14.TabIndex = 64;
+            this.txtStockMax.Location = new System.Drawing.Point(459, 433);
+            this.txtStockMax.Name = "txtStockMax";
+            this.txtStockMax.Size = new System.Drawing.Size(122, 30);
+            this.txtStockMax.TabIndex = 64;
+            this.txtStockMax.Text = "0";
+            this.txtStockMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label25
             // 
@@ -660,12 +673,14 @@ namespace POSales
             this.label25.TabIndex = 63;
             this.label25.Text = "Stock max:";
             // 
-            // textBox15
+            // txtStockMin
             // 
-            this.textBox15.Location = new System.Drawing.Point(459, 402);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(122, 30);
-            this.textBox15.TabIndex = 62;
+            this.txtStockMin.Location = new System.Drawing.Point(459, 402);
+            this.txtStockMin.Name = "txtStockMin";
+            this.txtStockMin.Size = new System.Drawing.Size(122, 30);
+            this.txtStockMin.TabIndex = 62;
+            this.txtStockMin.Text = "0";
+            this.txtStockMin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label26
             // 
@@ -677,13 +692,6 @@ namespace POSales
             this.label26.TabIndex = 61;
             this.label26.Text = "Stock min:";
             // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(692, 402);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(122, 30);
-            this.textBox16.TabIndex = 70;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -694,12 +702,14 @@ namespace POSales
             this.label8.TabIndex = 69;
             this.label8.Text = "%ICE:";
             // 
-            // textBox17
+            // txtValorIce
             // 
-            this.textBox17.Location = new System.Drawing.Point(692, 448);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(122, 30);
-            this.textBox17.TabIndex = 72;
+            this.txtValorIce.Location = new System.Drawing.Point(692, 448);
+            this.txtValorIce.Name = "txtValorIce";
+            this.txtValorIce.Size = new System.Drawing.Size(122, 30);
+            this.txtValorIce.TabIndex = 72;
+            this.txtValorIce.Text = "00,00";
+            this.txtValorIce.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label27
             // 
@@ -711,51 +721,53 @@ namespace POSales
             this.label27.TabIndex = 71;
             this.label27.Text = "Valor ICE:";
             // 
-            // pictureBox4
+            // picItem
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(882, 287);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(171, 164);
-            this.pictureBox4.TabIndex = 73;
-            this.pictureBox4.TabStop = false;
+            this.picItem.Location = new System.Drawing.Point(882, 287);
+            this.picItem.Name = "picItem";
+            this.picItem.Size = new System.Drawing.Size(171, 164);
+            this.picItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picItem.TabIndex = 73;
+            this.picItem.TabStop = false;
             // 
-            // pictureBox6
+            // picBrowse
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1059, 342);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(39, 29);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 74;
-            this.pictureBox6.TabStop = false;
+            this.picBrowse.Image = ((System.Drawing.Image)(resources.GetObject("picBrowse.Image")));
+            this.picBrowse.Location = new System.Drawing.Point(1059, 342);
+            this.picBrowse.Name = "picBrowse";
+            this.picBrowse.Size = new System.Drawing.Size(39, 29);
+            this.picBrowse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBrowse.TabIndex = 74;
+            this.picBrowse.TabStop = false;
+            this.picBrowse.Click += new System.EventHandler(this.picBrowse_Click);
             // 
-            // textBox18
+            // txtCatA
             // 
-            this.textBox18.Location = new System.Drawing.Point(163, 550);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(121, 30);
-            this.textBox18.TabIndex = 82;
+            this.txtCatA.Location = new System.Drawing.Point(163, 550);
+            this.txtCatA.Name = "txtCatA";
+            this.txtCatA.Size = new System.Drawing.Size(121, 30);
+            this.txtCatA.TabIndex = 82;
             // 
-            // textBox19
+            // txtCatB
             // 
-            this.textBox19.Location = new System.Drawing.Point(163, 586);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(121, 30);
-            this.textBox19.TabIndex = 81;
+            this.txtCatB.Location = new System.Drawing.Point(163, 586);
+            this.txtCatB.Name = "txtCatB";
+            this.txtCatB.Size = new System.Drawing.Size(121, 30);
+            this.txtCatB.TabIndex = 81;
             // 
-            // textBox20
+            // txtCatC
             // 
-            this.textBox20.Location = new System.Drawing.Point(163, 622);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(121, 30);
-            this.textBox20.TabIndex = 80;
+            this.txtCatC.Location = new System.Drawing.Point(163, 622);
+            this.txtCatC.Name = "txtCatC";
+            this.txtCatC.Size = new System.Drawing.Size(121, 30);
+            this.txtCatC.TabIndex = 80;
             // 
-            // textBox21
+            // txtCatD
             // 
-            this.textBox21.Location = new System.Drawing.Point(163, 658);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(121, 30);
-            this.textBox21.TabIndex = 76;
+            this.txtCatD.Location = new System.Drawing.Point(163, 658);
+            this.txtCatD.Name = "txtCatD";
+            this.txtCatD.Size = new System.Drawing.Size(121, 30);
+            this.txtCatD.TabIndex = 76;
             // 
             // label31
             // 
@@ -807,62 +819,62 @@ namespace POSales
             this.label35.TabIndex = 90;
             this.label35.Text = "Categoria E:";
             // 
-            // textBox22
+            // txtCatE
             // 
-            this.textBox22.Location = new System.Drawing.Point(163, 694);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(121, 30);
-            this.textBox22.TabIndex = 91;
+            this.txtCatE.Location = new System.Drawing.Point(163, 694);
+            this.txtCatE.Name = "txtCatE";
+            this.txtCatE.Size = new System.Drawing.Size(121, 30);
+            this.txtCatE.TabIndex = 91;
             // 
-            // checkBox2
+            // chckServicio
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(322, 554);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(102, 26);
-            this.checkBox2.TabIndex = 92;
-            this.checkBox2.Text = "Servicio";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chckServicio.AutoSize = true;
+            this.chckServicio.Location = new System.Drawing.Point(322, 554);
+            this.chckServicio.Name = "chckServicio";
+            this.chckServicio.Size = new System.Drawing.Size(102, 26);
+            this.chckServicio.TabIndex = 92;
+            this.chckServicio.Text = "Servicio";
+            this.chckServicio.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chckAplicaSeries
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(322, 590);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(143, 26);
-            this.checkBox3.TabIndex = 93;
-            this.checkBox3.Text = "Aplica series";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chckAplicaSeries.AutoSize = true;
+            this.chckAplicaSeries.Location = new System.Drawing.Point(322, 590);
+            this.chckAplicaSeries.Name = "chckAplicaSeries";
+            this.chckAplicaSeries.Size = new System.Drawing.Size(143, 26);
+            this.chckAplicaSeries.TabIndex = 93;
+            this.chckAplicaSeries.Text = "Aplica series";
+            this.chckAplicaSeries.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chckCombo
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(483, 554);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(98, 26);
-            this.checkBox4.TabIndex = 94;
-            this.checkBox4.Text = "combo";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chckCombo.AutoSize = true;
+            this.chckCombo.Location = new System.Drawing.Point(483, 554);
+            this.chckCombo.Name = "chckCombo";
+            this.chckCombo.Size = new System.Drawing.Size(98, 26);
+            this.chckCombo.TabIndex = 94;
+            this.chckCombo.Text = "combo";
+            this.chckCombo.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // chckNegativo
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(322, 626);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(119, 26);
-            this.checkBox5.TabIndex = 95;
-            this.checkBox5.Text = "Negativo";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.chckNegativo.AutoSize = true;
+            this.chckNegativo.Location = new System.Drawing.Point(322, 626);
+            this.chckNegativo.Name = "chckNegativo";
+            this.chckNegativo.Size = new System.Drawing.Size(119, 26);
+            this.chckNegativo.TabIndex = 95;
+            this.chckNegativo.Text = "Negativo";
+            this.chckNegativo.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // chkGasto
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(483, 590);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(88, 26);
-            this.checkBox6.TabIndex = 96;
-            this.checkBox6.Text = "Gasto";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.chkGasto.AutoSize = true;
+            this.chkGasto.Location = new System.Drawing.Point(483, 590);
+            this.chkGasto.Name = "chkGasto";
+            this.chkGasto.Size = new System.Drawing.Size(88, 26);
+            this.chkGasto.TabIndex = 96;
+            this.chkGasto.Text = "Gasto";
+            this.chkGasto.UseVisualStyleBackColor = true;
             // 
             // textBox23
             // 
@@ -870,6 +882,8 @@ namespace POSales
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(95, 30);
             this.textBox23.TabIndex = 100;
+            this.textBox23.Text = "00,00";
+            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox24
             // 
@@ -877,6 +891,8 @@ namespace POSales
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(95, 30);
             this.textBox24.TabIndex = 99;
+            this.textBox24.Text = "00,00";
+            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox25
             // 
@@ -884,6 +900,8 @@ namespace POSales
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(95, 30);
             this.textBox25.TabIndex = 98;
+            this.textBox25.Text = "00,00";
+            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox26
             // 
@@ -891,55 +909,76 @@ namespace POSales
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(95, 30);
             this.textBox26.TabIndex = 97;
+            this.textBox26.Text = "00,00";
+            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtIce
+            // 
+            this.txtIce.Location = new System.Drawing.Point(692, 402);
+            this.txtIce.Name = "txtIce";
+            this.txtIce.Size = new System.Drawing.Size(122, 30);
+            this.txtIce.TabIndex = 70;
+            this.txtIce.Text = "00,00";
+            this.txtIce.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtIva
+            // 
+            this.txtIva.Location = new System.Drawing.Point(538, 130);
+            this.txtIva.Name = "txtIva";
+            this.txtIva.Size = new System.Drawing.Size(73, 30);
+            this.txtIva.TabIndex = 101;
+            this.txtIva.Text = "00,00";
+            this.txtIva.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ItemModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1163, 729);
+            this.Controls.Add(this.txtIva);
             this.Controls.Add(this.textBox23);
             this.Controls.Add(this.textBox24);
             this.Controls.Add(this.textBox25);
             this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.textBox22);
+            this.Controls.Add(this.chkGasto);
+            this.Controls.Add(this.chckNegativo);
+            this.Controls.Add(this.chckCombo);
+            this.Controls.Add(this.chckAplicaSeries);
+            this.Controls.Add(this.chckServicio);
+            this.Controls.Add(this.txtCatE);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label31);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.textBox17);
+            this.Controls.Add(this.txtCatA);
+            this.Controls.Add(this.txtCatB);
+            this.Controls.Add(this.txtCatC);
+            this.Controls.Add(this.txtCatD);
+            this.Controls.Add(this.picBrowse);
+            this.Controls.Add(this.picItem);
+            this.Controls.Add(this.txtValorIce);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.txtIce);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.txtUnidad);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.txtCosto);
             this.Controls.Add(this.label24);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.txtStockMax);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.txtStockMin);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.txtDescMax);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtComision);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtReason);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txtPesoItem);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtUnidadCaja);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -949,8 +988,7 @@ namespace POSales
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.HasIva);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtCod4);
             this.Controls.Add(this.label16);
@@ -997,8 +1035,8 @@ namespace POSales
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picItem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBrowse)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1038,8 +1076,6 @@ namespace POSales
         public System.Windows.Forms.TextBox txtCod4;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
@@ -1049,48 +1085,50 @@ namespace POSales
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label22;
-        public System.Windows.Forms.TextBox textBox9;
+        public System.Windows.Forms.TextBox txtUnidadCaja;
         private System.Windows.Forms.Label label23;
-        public System.Windows.Forms.TextBox textBox10;
+        public System.Windows.Forms.TextBox txtPesoItem;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
         public System.Windows.Forms.TextBox txtReason;
         private System.Windows.Forms.Label label10;
-        public System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.TextBox textBox11;
+        public System.Windows.Forms.TextBox txtComision;
+        public System.Windows.Forms.TextBox txtDescMax;
         private System.Windows.Forms.Label label20;
-        public System.Windows.Forms.TextBox textBox12;
+        public System.Windows.Forms.TextBox txtUnidad;
         private System.Windows.Forms.Label label21;
-        public System.Windows.Forms.TextBox textBox13;
+        public System.Windows.Forms.TextBox txtCosto;
         private System.Windows.Forms.Label label24;
-        public System.Windows.Forms.TextBox textBox14;
+        public System.Windows.Forms.TextBox txtStockMax;
         private System.Windows.Forms.Label label25;
-        public System.Windows.Forms.TextBox textBox15;
+        public System.Windows.Forms.TextBox txtStockMin;
         private System.Windows.Forms.Label label26;
-        public System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox textBox17;
+        public System.Windows.Forms.TextBox txtValorIce;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        public System.Windows.Forms.TextBox textBox18;
-        public System.Windows.Forms.TextBox textBox19;
-        public System.Windows.Forms.TextBox textBox20;
-        public System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.PictureBox picBrowse;
+        public System.Windows.Forms.TextBox txtCatA;
+        public System.Windows.Forms.TextBox txtCatB;
+        public System.Windows.Forms.TextBox txtCatC;
+        public System.Windows.Forms.TextBox txtCatD;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        public System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
+        public System.Windows.Forms.TextBox txtCatE;
         public System.Windows.Forms.TextBox textBox23;
         public System.Windows.Forms.TextBox textBox24;
         public System.Windows.Forms.TextBox textBox25;
         public System.Windows.Forms.TextBox textBox26;
+        public System.Windows.Forms.TextBox txtIce;
+        public System.Windows.Forms.TextBox txtIva;
+        public System.Windows.Forms.CheckBox chckServicio;
+        public System.Windows.Forms.CheckBox chckAplicaSeries;
+        public System.Windows.Forms.CheckBox chckCombo;
+        public System.Windows.Forms.CheckBox chckNegativo;
+        public System.Windows.Forms.CheckBox chkGasto;
+        public System.Windows.Forms.PictureBox picItem;
+        public System.Windows.Forms.CheckBox HasIva;
     }
 }

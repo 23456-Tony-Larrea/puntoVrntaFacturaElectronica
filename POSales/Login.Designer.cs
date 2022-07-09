@@ -246,10 +246,10 @@ namespace POSales
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private MetroFramework.Controls.MetroTextBox txtName;
         private System.Windows.Forms.Label label2;
         private MetroFramework.Controls.MetroTextBox txtPass;
         public System.Windows.Forms.Button btnLogin;
         public System.Windows.Forms.Button btnCancel;
+        public MetroFramework.Controls.MetroTextBox txtName;
     }
 }

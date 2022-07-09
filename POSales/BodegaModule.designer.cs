@@ -36,8 +36,8 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.txtGroup = new System.Windows.Forms.TextBox();
+            this.btnGuardarCat = new System.Windows.Forms.Button();
+            this.txtBodega = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +74,7 @@
             this.label1.Location = new System.Drawing.Point(4, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 23);
+            this.label1.Size = new System.Drawing.Size(163, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = " Modulo de bodegas";
             // 
@@ -84,7 +84,7 @@
             this.lblId.Location = new System.Drawing.Point(3, 174);
             this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(25, 21);
+            this.lblId.Size = new System.Drawing.Size(22, 19);
             this.lblId.TabIndex = 20;
             this.lblId.Text = "id";
             this.lblId.Visible = false;
@@ -118,6 +118,7 @@
             this.btnUpdate.TabIndex = 18;
             this.btnUpdate.Text = "Actualizar";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label2
             // 
@@ -125,37 +126,38 @@
             this.label2.Location = new System.Drawing.Point(3, 95);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(209, 21);
+            this.label2.Size = new System.Drawing.Size(173, 19);
             this.label2.TabIndex = 17;
             this.label2.Text = "Nombre de la bodega :";
             // 
-            // btnSave
+            // btnGuardarCat
             // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(436, 179);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(136, 46);
-            this.btnSave.TabIndex = 16;
-            this.btnSave.Text = "Guardar";
-            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnGuardarCat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardarCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnGuardarCat.FlatAppearance.BorderSize = 0;
+            this.btnGuardarCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarCat.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarCat.Location = new System.Drawing.Point(436, 178);
+            this.btnGuardarCat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardarCat.Name = "btnGuardarCat";
+            this.btnGuardarCat.Size = new System.Drawing.Size(136, 46);
+            this.btnGuardarCat.TabIndex = 16;
+            this.btnGuardarCat.Text = "Guardar";
+            this.btnGuardarCat.UseVisualStyleBackColor = false;
+            this.btnGuardarCat.Click += new System.EventHandler(this.btnGuardarCat_Click);
             // 
-            // txtGroup
+            // txtBodega
             // 
-            this.txtGroup.Location = new System.Drawing.Point(215, 92);
-            this.txtGroup.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGroup.Name = "txtGroup";
-            this.txtGroup.Size = new System.Drawing.Size(663, 28);
-            this.txtGroup.TabIndex = 15;
-            this.txtGroup.TextChanged += new System.EventHandler(this.txtGroup_TextChanged);
+            this.txtBodega.Location = new System.Drawing.Point(215, 92);
+            this.txtBodega.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBodega.Name = "txtBodega";
+            this.txtBodega.Size = new System.Drawing.Size(663, 24);
+            this.txtBodega.TabIndex = 15;
+           
             // 
             // BodegaModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(878, 238);
@@ -164,8 +166,8 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtGroup);
+            this.Controls.Add(this.btnGuardarCat);
+            this.Controls.Add(this.txtBodega);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -188,7 +190,7 @@
         public System.Windows.Forms.Button btnCancel;
         public System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Button btnSave;
-        public System.Windows.Forms.TextBox txtGroup;
+        public System.Windows.Forms.Button btnGuardarCat;
+        public System.Windows.Forms.TextBox txtBodega;
     }
 }

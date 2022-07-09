@@ -44,6 +44,7 @@ namespace POSales
                     MessageBox.Show("Existosamente guardado.", "POS");
                     Clear();
                     brand.LoadBrand();
+                    this.Dispose();
                 }
 
             }

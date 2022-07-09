@@ -66,8 +66,8 @@ namespace POSales
                 CategoryModule module = new CategoryModule(this);
                 module.lblId.Text = dgvCategory[1, e.RowIndex].Value.ToString();
                 module.txtCategory.Text = dgvCategory[2, e.RowIndex].Value.ToString();
-                module.btnSave.Enabled = false;
-                module.btnUpdate.Enabled = true;
+                module.btnGuardar.Enabled = false;
+                module.btnActualizar.Enabled = true;
                 module.ShowDialog();
             }
             LoadCategory();

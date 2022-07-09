@@ -49,7 +49,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(888, 66);
             this.panel1.TabIndex = 7;
@@ -59,11 +59,12 @@
             this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
             this.picClose.Location = new System.Drawing.Point(852, 0);
-            this.picClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picClose.Margin = new System.Windows.Forms.Padding(4);
             this.picClose.Name = "picClose";
             this.picClose.Size = new System.Drawing.Size(38, 46);
             this.picClose.TabIndex = 1;
             this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // label1
             // 
@@ -73,7 +74,7 @@
             this.label1.Location = new System.Drawing.Point(4, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 23);
+            this.label1.Size = new System.Drawing.Size(147, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = " Modulo de grupos";
             // 
@@ -83,7 +84,7 @@
             this.lblId.Location = new System.Drawing.Point(12, 214);
             this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(25, 21);
+            this.lblId.Size = new System.Drawing.Size(22, 19);
             this.lblId.TabIndex = 13;
             this.lblId.Text = "id";
             this.lblId.Visible = false;
@@ -96,7 +97,7 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
             this.btnCancel.Location = new System.Drawing.Point(755, 208);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(135, 46);
             this.btnCancel.TabIndex = 12;
@@ -111,12 +112,13 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.Location = new System.Drawing.Point(607, 208);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(141, 46);
             this.btnUpdate.TabIndex = 11;
             this.btnUpdate.Text = "Actualizar";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label2
             // 
@@ -124,7 +126,7 @@
             this.label2.Location = new System.Drawing.Point(12, 135);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 21);
+            this.label2.Size = new System.Drawing.Size(143, 19);
             this.label2.TabIndex = 10;
             this.label2.Text = "Nombre del grupo :";
             // 
@@ -136,24 +138,25 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(463, 209);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(136, 46);
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Guardar";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtGroup
             // 
             this.txtGroup.Location = new System.Drawing.Point(214, 131);
-            this.txtGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGroup.Margin = new System.Windows.Forms.Padding(4);
             this.txtGroup.Name = "txtGroup";
-            this.txtGroup.Size = new System.Drawing.Size(663, 28);
+            this.txtGroup.Size = new System.Drawing.Size(663, 24);
             this.txtGroup.TabIndex = 8;
             // 
             // GroupModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(888, 269);
             this.Controls.Add(this.panel1);
@@ -165,7 +168,7 @@
             this.Controls.Add(this.txtGroup);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GroupModule";
             this.Text = "GroupModule";
             this.Load += new System.EventHandler(this.GroupModule_Load);

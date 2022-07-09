@@ -103,7 +103,7 @@ namespace POSales
                         this.Hide();
                         MenuPrincipalFactura menuPrincipalFactura = new MenuPrincipalFactura();
                         menuPrincipalFactura.ShowDialog();
-                      
+                       
                     }
 
                 }

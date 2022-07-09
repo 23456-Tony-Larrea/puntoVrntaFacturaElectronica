@@ -19,7 +19,8 @@ namespace POSales
 
         private void btnFactura_Click(object sender, EventArgs e)
         {
-
+            FacturaClientes factura = new FacturaClientes();
+            factura.ShowDialog();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -31,6 +32,7 @@ namespace POSales
         {
             ClientModule clientModule = new ClientModule(new Clients());
             clientModule.ShowDialog();
+           
         }
     }
 }

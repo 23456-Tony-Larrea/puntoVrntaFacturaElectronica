@@ -1,0 +1,9 @@
+D:\punto de venta x arreglar\POSales\POSalesDb\bin\Debug\POSalesDb.dll
+D:\punto de venta x arreglar\POSales\POSalesDb\bin\Debug\POSalesDb.pdb
+D:\punto de venta x arreglar\POSales\POSalesDb\bin\Debug\Dapper.dll
+D:\punto de venta x arreglar\POSales\POSalesDb\bin\Debug\Dapper.xml
+D:\punto de venta x arreglar\POSales\POSalesDb\obj\Debug\POSalesDb.csproj.AssemblyReference.cache
+D:\punto de venta x arreglar\POSales\POSalesDb\obj\Debug\POSalesDb.csproj.CoreCompileInputs.cache
+D:\punto de venta x arreglar\POSales\POSalesDb\obj\Debug\POSalesDb.csproj.CopyComplete
+D:\punto de venta x arreglar\POSales\POSalesDb\obj\Debug\POSalesDb.dll
+D:\punto de venta x arreglar\POSales\POSalesDb\obj\Debug\POSalesDb.pdb
