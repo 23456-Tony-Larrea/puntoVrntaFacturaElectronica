@@ -45,11 +45,11 @@ namespace POSalesDb
 		public string imagenUrl { get; set; }
 		public decimal iva { get; set; }
 		public decimal montoTotal { get; set; }
-		public string categoriaA { get; set; }
-		public string categoriaB { get; set; }
-		public string categoriaC { get; set; }
-		public string categoriaD { get; set; }
-		public string categoriaE { get; set; }
+		public string categoriasA { get; set; }
+		public string categoriasB { get; set; }
+		public string categoriasC { get; set; }
+		public string categoriasD { get; set; }
+		public string categoriasE { get; set; }
 		[DisplayName("Precio total")]
 		public decimal CostoTotal => (HasIva) ? montoTotal * iva * ice : montoTotal;
 

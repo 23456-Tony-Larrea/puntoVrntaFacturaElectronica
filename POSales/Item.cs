@@ -59,10 +59,10 @@ namespace POSales
                 item.txtStockMin.Text = dgvItem.Rows[e.RowIndex].Cells["stockMin"].Value.ToString();
                 item.txtCosto.Text = dgvItem.Rows[e.RowIndex].Cells["costo"].Value.ToString();
                 item.txtUnidad.Text = dgvItem.Rows[e.RowIndex].Cells["unidad"].Value.ToString();
-                item.cboBodega.SelectedIndex = dgvItem.Rows[e.RowIndex].Cells["bId"].Value.ToString().Length;
-                item.cboCategory.SelectedIndex = dgvItem.Rows[e.RowIndex].Cells["CId"].Value.ToString().Length;
-                item.cboGroup.SelectedIndex = dgvItem.Rows[e.RowIndex].Cells["gId"].Value.ToString().Length;
-                item.cboBrand.SelectedIndex = dgvItem.Rows[e.RowIndex].Cells["mId"].Value.ToString().Length;
+                item.cboBodega.SelectedIndex = Convert.ToInt32 (dgvItem.Rows[e.RowIndex].Cells["bId"].Value.ToString());
+                item.cboCategory.SelectedIndex = Convert.ToInt32(dgvItem.Rows[e.RowIndex].Cells["CId"].Value.ToString());
+                item.cboGroup.SelectedIndex = Convert.ToInt32(dgvItem.Rows[e.RowIndex].Cells["gId"].Value.ToString());
+                item.cboBrand.SelectedIndex = Convert.ToInt32(dgvItem.Rows[e.RowIndex].Cells["mId"].Value.ToString());
                 item.chckServicio.Checked = dgvItem.Rows[e.RowIndex].Cells["servicio"].Value.ToString() == "1";
                 item.chckAplicaSeries.Checked = dgvItem.Rows[e.RowIndex].Cells["aplicaSeries"].Value.ToString() == "1";
                 item.chckNegativo.Checked = dgvItem.Rows[e.RowIndex].Cells["negativo"].Value.ToString() == "1";
@@ -72,7 +72,7 @@ namespace POSales
                 item.txtValorIce.Text = dgvItem.Rows[e.RowIndex].Cells["valorIce"].Value.ToString();
                 item.txtIva.Text = dgvItem.Rows[e.RowIndex].Cells["iva"].Value.ToString();
                 item.HasIva.Checked = dgvItem.Rows[e.RowIndex].Cells["HasIva"].Value.ToString() == "1";
-                item.txtCatA.Text = dgvItem.Rows[e.RowIndex].Cells["categoriaA"].Value.ToString();
+                item.txtCateA.Text = dgvItem.Rows[e.RowIndex].Cells["categoriaA"].Value.ToString();
                 item.txtCatB.Text = dgvItem.Rows[e.RowIndex].Cells["categoriaB"].Value.ToString();
                 item.txtCatC.Text = dgvItem.Rows[e.RowIndex].Cells["categoriaC"].Value.ToString();
                 item.txtCatD.Text = dgvItem.Rows[e.RowIndex].Cells["categoriaD"].Value.ToString();

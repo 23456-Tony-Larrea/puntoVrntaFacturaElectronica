@@ -95,7 +95,7 @@ namespace POSales
          
                 if (MessageBox.Show("Estas seguro de guardar este producto?", "Producto Guardado", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    cm = new SqlCommand("INSERT INTO Items(nombre, codigoUno, codigoDos, codigoTres,codigoCuatro, codigoBarras,precioA,precioB,precioC,precioD,descripcion,unidadCaja,peso,comision,descMax,stockMin,stockMax,costo,unidad,bId,cId,gId,mId,servicio,aplicaSeries,negativo,combo,ice,valorIce,imagen,imagenUrl,iva,montoTotal,HasIva,@categoriaA,@categoriaB,@categoriaC,@categoriaD,@categoriaE) VALUES (@nombre, @codigoUno, @codigoDos, @codigoTres,@codigoCuatro,@codigoBarras,@precioA,@precioB,@precioC,@precioD,@descripcion,@unidadCaja,@peso,@comision,@descMax,@stockMin,@stockMax,@costo,@unidad,@bId,@cId,@gId,@mId,@servicio,@aplicaSeries,@negativo,@combo,@ice,@valorIce,@imagen,@imagenUrl,@iva,@montoTotal,@HasIva,@categoriaA,@categoriaB,@categoriaC,@categoriaD,@categoriaE)", cn);
+                    cm = new SqlCommand("INSERT INTO Items(nombre, codigoUno, codigoDos, codigoTres,codigoCuatro, codigoBarras,precioA,precioB,precioC,precioD,descripcion,unidadCaja,peso,comision,descMax,stockMin,stockMax,costo,unidad,bId,cId,gId,mId,servicio,aplicaSeries,negativo,combo,ice,valorIce,imagen,imagenUrl,iva,montoTotal,HasIva,@categoriasA,@categoriasB,@categoriasC,@categoriasD,@categoriasE) VALUES (@nombre, @codigoUno, @codigoDos, @codigoTres,@codigoCuatro,@codigoBarras,@precioA,@precioB,@precioC,@precioD,@descripcion,@unidadCaja,@peso,@comision,@descMax,@stockMin,@stockMax,@costo,@unidad,@bId,@cId,@gId,@mId,@servicio,@aplicaSeries,@negativo,@combo,@ice,@valorIce,@imagen,@imagenUrl,@iva,@montoTotal,@HasIva,@categoriasA,@categoriasB,@categoriasC,@categoriasD,@categoriasE)", cn);
                     cm.Parameters.AddWithValue("@nombre", txtNameProdcut.Text);
                     cm.Parameters.AddWithValue("@codigoUno", txtCodUno.Text);
                     cm.Parameters.AddWithValue("@codigoDos", txtCodDos.Text);
@@ -131,12 +131,12 @@ namespace POSales
                     cm.Parameters.AddWithValue("@imagen",bytes);
                     cm.Parameters.AddWithValue("@imagenUrl", txtReason.Text);
                     cm.Parameters.AddWithValue("@montoTotal", decimal.Parse(txtPriceA.Text)*decimal.Parse(txtIva.Text));
-                    cm.Parameters.AddWithValue("@categoriaA", txtCatA.Text);
-                    cm.Parameters.AddWithValue("@categoriaB", txtCatB.Text);
-                    cm.Parameters.AddWithValue("@categoriaC", txtCatC.Text);
-                    cm.Parameters.AddWithValue("@categoriaD", txtCatD.Text);
-                    cm.Parameters.AddWithValue("@categoriaE", txtCatE.Text);
-                    cn.Open();
+                    cm.Parameters.AddWithValue("@categoriasA", txtCateA.Text);
+                    cm.Parameters.AddWithValue("@categoriasB", txtCatB.Text);
+                    cm.Parameters.AddWithValue("@categoriasC", txtCatC.Text);
+                    cm.Parameters.AddWithValue("@categoriasD", txtCatD.Text);
+                    cm.Parameters.AddWithValue("@categoriasE", txtCatE.Text);
+                    ////cn.Open();
                     cm.ExecuteNonQuery();
                     cn.Close();
                     MessageBox.Show("Item Guardado con exito.", stitle);
@@ -206,11 +206,11 @@ namespace POSales
                     cm.Parameters.AddWithValue("@imagen", bytes);
                     cm.Parameters.AddWithValue("@imagenUrl", txtReason.Text);
                     cm.Parameters.AddWithValue("@montoTotal", decimal.Parse(txtPriceA.Text) * decimal.Parse(txtIva.Text));
-                    cm.Parameters.AddWithValue("@categoriaA", txtCatA.Text);
-                    cm.Parameters.AddWithValue("@categoriaB", txtCatB.Text);
-                    cm.Parameters.AddWithValue("@categoriaC", txtCatC.Text);
-                    cm.Parameters.AddWithValue("@categoriaD", txtCatD.Text);
-                    cm.Parameters.AddWithValue("@categoriaE", txtCatE.Text);
+                    cm.Parameters.AddWithValue("@categoriasA", txtCateA.Text);
+                    cm.Parameters.AddWithValue("@categoriasB", txtCatB.Text);
+                    cm.Parameters.AddWithValue("@categoriasC", txtCatC.Text);
+                    cm.Parameters.AddWithValue("@categoriasD", txtCatD.Text);
+                    cm.Parameters.AddWithValue("@categoriasE", txtCatE.Text);
 
                     cn.Open();
                     cm.ExecuteNonQuery();
