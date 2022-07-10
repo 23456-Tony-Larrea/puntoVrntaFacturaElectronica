@@ -7,3 +7,12 @@ D:\punto de venta x arreglar\POSales\POSalesDb\obj\Debug\POSalesDb.csproj.CoreCo
 D:\punto de venta x arreglar\POSales\POSalesDb\obj\Debug\POSalesDb.csproj.CopyComplete
 D:\punto de venta x arreglar\POSales\POSalesDb\obj\Debug\POSalesDb.dll
 D:\punto de venta x arreglar\POSales\POSalesDb\obj\Debug\POSalesDb.pdb
+C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSalesDb\bin\Debug\POSalesDb.dll
+C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSalesDb\bin\Debug\POSalesDb.pdb
+C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSalesDb\bin\Debug\Dapper.dll
+C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSalesDb\bin\Debug\Dapper.xml
+C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSalesDb\obj\Debug\POSalesDb.csproj.CoreCompileInputs.cache
+C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSalesDb\obj\Debug\POSalesDb.dll
+C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSalesDb\obj\Debug\POSalesDb.pdb
+C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSalesDb\obj\Debug\POSalesDb.csproj.AssemblyReference.cache
+C:\Users\WORLD06\Desktop\pullPuntoVenta\puntoVrntaFacturaElectronica\POSalesDb\obj\Debug\POSalesDb.csproj.CopyComplete

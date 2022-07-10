@@ -134,11 +134,11 @@ namespace POSales
                             imagen = bytes,
                             imagenUrl = txtReason.Text,
                             montoTotal = decimal.Parse(valA.Text),
-                            categoriaA = txtCatA.Text,
-                            categoriaB = txtCatB.Text,
-                            categoriaC = txtCatC.Text,
-                            categoriaD = txtCatD.Text,
-                            categoriaE = txtCatE.Text
+                            categoriasA = txtCatA.Text,
+                            categoriasB = txtCatB.Text,
+                            categoriasC = txtCatC.Text,
+                            categoriasD = txtCatD.Text,
+                            categoriasE = txtCatE.Text
                         }, new string[] { nameof(Items.Id) }); 
                     MessageBox.Show("Item registrado con exito.", "POS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Dispose();

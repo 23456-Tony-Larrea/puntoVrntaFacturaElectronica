@@ -159,7 +159,7 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 23);
+            this.label1.Size = new System.Drawing.Size(129, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Modulo del Item";
             // 
@@ -198,7 +198,7 @@ namespace POSales
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(11, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 22);
+            this.label2.Size = new System.Drawing.Size(117, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "CodProducto :";
             // 
@@ -207,7 +207,7 @@ namespace POSales
             this.txtIdProd.Enabled = false;
             this.txtIdProd.Location = new System.Drawing.Point(162, 59);
             this.txtIdProd.Name = "txtIdProd";
-            this.txtIdProd.Size = new System.Drawing.Size(194, 30);
+            this.txtIdProd.Size = new System.Drawing.Size(194, 26);
             this.txtIdProd.TabIndex = 8;
             // 
             // panel1
@@ -226,7 +226,7 @@ namespace POSales
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(11, 289);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 22);
+            this.label3.Size = new System.Drawing.Size(121, 20);
             this.label3.TabIndex = 10;
             this.label3.Text = "Codigo Barras :";
             // 
@@ -235,7 +235,7 @@ namespace POSales
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(11, 342);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 22);
+            this.label4.Size = new System.Drawing.Size(104, 20);
             this.label4.TabIndex = 10;
             this.label4.Text = "Descripcion :";
             // 
@@ -244,7 +244,7 @@ namespace POSales
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(843, 93);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 22);
+            this.label5.Size = new System.Drawing.Size(63, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "Marca:";
             // 
@@ -253,7 +253,7 @@ namespace POSales
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(843, 129);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 22);
+            this.label6.Size = new System.Drawing.Size(92, 20);
             this.label6.TabIndex = 10;
             this.label6.Text = "Categoria :";
             // 
@@ -262,7 +262,7 @@ namespace POSales
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(362, 284);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 22);
+            this.label7.Size = new System.Drawing.Size(79, 20);
             this.label7.TabIndex = 10;
             this.label7.Text = "Precio  D:";
             // 
@@ -270,7 +270,7 @@ namespace POSales
             // 
             this.txtBarcode.Location = new System.Drawing.Point(162, 286);
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(194, 30);
+            this.txtBarcode.Size = new System.Drawing.Size(194, 26);
             this.txtBarcode.TabIndex = 8;
             // 
             // cboBrand
@@ -279,7 +279,7 @@ namespace POSales
             this.cboBrand.FormattingEnabled = true;
             this.cboBrand.Location = new System.Drawing.Point(963, 90);
             this.cboBrand.Name = "cboBrand";
-            this.cboBrand.Size = new System.Drawing.Size(165, 30);
+            this.cboBrand.Size = new System.Drawing.Size(165, 28);
             this.cboBrand.TabIndex = 14;
             this.cboBrand.SelectedIndexChanged += new System.EventHandler(this.cboBrand_SelectedIndexChanged);
             // 
@@ -289,14 +289,14 @@ namespace POSales
             this.cboCategory.FormattingEnabled = true;
             this.cboCategory.Location = new System.Drawing.Point(963, 126);
             this.cboCategory.Name = "cboCategory";
-            this.cboCategory.Size = new System.Drawing.Size(165, 30);
+            this.cboCategory.Size = new System.Drawing.Size(165, 28);
             this.cboCategory.TabIndex = 14;
             // 
             // txtPriceD
             // 
             this.txtPriceD.Location = new System.Drawing.Point(459, 281);
             this.txtPriceD.Name = "txtPriceD";
-            this.txtPriceD.Size = new System.Drawing.Size(194, 30);
+            this.txtPriceD.Size = new System.Drawing.Size(194, 26);
             this.txtPriceD.TabIndex = 15;
             this.txtPriceD.Text = "00,00";
             this.txtPriceD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -307,7 +307,7 @@ namespace POSales
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(843, 62);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 22);
+            this.label9.Size = new System.Drawing.Size(60, 20);
             this.label9.TabIndex = 17;
             this.label9.Text = "Grupo:";
             // 
@@ -317,7 +317,7 @@ namespace POSales
             this.cboGroup.FormattingEnabled = true;
             this.cboGroup.Location = new System.Drawing.Point(963, 54);
             this.cboGroup.Name = "cboGroup";
-            this.cboGroup.Size = new System.Drawing.Size(165, 30);
+            this.cboGroup.Size = new System.Drawing.Size(165, 28);
             this.cboGroup.TabIndex = 18;
             // 
             // label11
@@ -325,7 +325,7 @@ namespace POSales
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(843, 162);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(89, 22);
+            this.label11.Size = new System.Drawing.Size(72, 20);
             this.label11.TabIndex = 21;
             this.label11.Text = "Bodega:";
             // 
@@ -335,7 +335,7 @@ namespace POSales
             this.cboBodega.FormattingEnabled = true;
             this.cboBodega.Location = new System.Drawing.Point(963, 159);
             this.cboBodega.Name = "cboBodega";
-            this.cboBodega.Size = new System.Drawing.Size(165, 30);
+            this.cboBodega.Size = new System.Drawing.Size(165, 28);
             this.cboBodega.TabIndex = 22;
             // 
             // label12
@@ -343,7 +343,7 @@ namespace POSales
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(11, 103);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(89, 22);
+            this.label12.Size = new System.Drawing.Size(72, 20);
             this.label12.TabIndex = 24;
             this.label12.Text = "Nombre:";
             // 
@@ -351,7 +351,7 @@ namespace POSales
             // 
             this.txtNameProdcut.Location = new System.Drawing.Point(107, 100);
             this.txtNameProdcut.Name = "txtNameProdcut";
-            this.txtNameProdcut.Size = new System.Drawing.Size(713, 30);
+            this.txtNameProdcut.Size = new System.Drawing.Size(713, 26);
             this.txtNameProdcut.TabIndex = 23;
             // 
             // label13
@@ -359,7 +359,7 @@ namespace POSales
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(11, 144);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(99, 22);
+            this.label13.Size = new System.Drawing.Size(80, 20);
             this.label13.TabIndex = 25;
             this.label13.Text = "Codigo 1:";
             // 
@@ -367,14 +367,14 @@ namespace POSales
             // 
             this.txtCodUno.Location = new System.Drawing.Point(107, 141);
             this.txtCodUno.Name = "txtCodUno";
-            this.txtCodUno.Size = new System.Drawing.Size(249, 30);
+            this.txtCodUno.Size = new System.Drawing.Size(249, 26);
             this.txtCodUno.TabIndex = 26;
             // 
             // txtCodDos
             // 
             this.txtCodDos.Location = new System.Drawing.Point(108, 177);
             this.txtCodDos.Name = "txtCodDos";
-            this.txtCodDos.Size = new System.Drawing.Size(249, 30);
+            this.txtCodDos.Size = new System.Drawing.Size(249, 26);
             this.txtCodDos.TabIndex = 28;
             // 
             // label14
@@ -382,7 +382,7 @@ namespace POSales
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(11, 180);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(99, 22);
+            this.label14.Size = new System.Drawing.Size(80, 20);
             this.label14.TabIndex = 27;
             this.label14.Text = "Codigo 2:";
             // 
@@ -390,7 +390,7 @@ namespace POSales
             // 
             this.txtCod3.Location = new System.Drawing.Point(107, 213);
             this.txtCod3.Name = "txtCod3";
-            this.txtCod3.Size = new System.Drawing.Size(249, 30);
+            this.txtCod3.Size = new System.Drawing.Size(249, 26);
             this.txtCod3.TabIndex = 30;
             // 
             // label15
@@ -398,7 +398,7 @@ namespace POSales
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(11, 216);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(99, 22);
+            this.label15.Size = new System.Drawing.Size(80, 20);
             this.label15.TabIndex = 29;
             this.label15.Text = "Codigo 3:";
             // 
@@ -406,7 +406,7 @@ namespace POSales
             // 
             this.txtCod4.Location = new System.Drawing.Point(107, 250);
             this.txtCod4.Name = "txtCod4";
-            this.txtCod4.Size = new System.Drawing.Size(249, 30);
+            this.txtCod4.Size = new System.Drawing.Size(249, 26);
             this.txtCod4.TabIndex = 32;
             // 
             // label16
@@ -414,7 +414,7 @@ namespace POSales
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(11, 253);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(99, 22);
+            this.label16.Size = new System.Drawing.Size(80, 20);
             this.label16.TabIndex = 31;
             this.label16.Text = "Codigo 4:";
             // 
@@ -433,7 +433,7 @@ namespace POSales
             this.HasIva.AutoSize = true;
             this.HasIva.Location = new System.Drawing.Point(617, 130);
             this.HasIva.Name = "HasIva";
-            this.HasIva.Size = new System.Drawing.Size(67, 26);
+            this.HasIva.Size = new System.Drawing.Size(55, 24);
             this.HasIva.TabIndex = 35;
             this.HasIva.Text = "IVA";
             this.HasIva.UseVisualStyleBackColor = true;
@@ -444,7 +444,7 @@ namespace POSales
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(362, 176);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(91, 22);
+            this.label17.Size = new System.Drawing.Size(75, 20);
             this.label17.TabIndex = 36;
             this.label17.Text = "Precio A:";
             // 
@@ -453,7 +453,7 @@ namespace POSales
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(362, 221);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(87, 22);
+            this.label18.Size = new System.Drawing.Size(73, 20);
             this.label18.TabIndex = 37;
             this.label18.Text = "Precio B:";
             // 
@@ -462,7 +462,7 @@ namespace POSales
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(362, 256);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(91, 22);
+            this.label19.Size = new System.Drawing.Size(76, 20);
             this.label19.TabIndex = 38;
             this.label19.Text = "Precio C:";
             // 
@@ -470,7 +470,7 @@ namespace POSales
             // 
             this.txtPriceC.Location = new System.Drawing.Point(459, 245);
             this.txtPriceC.Name = "txtPriceC";
-            this.txtPriceC.Size = new System.Drawing.Size(194, 30);
+            this.txtPriceC.Size = new System.Drawing.Size(194, 26);
             this.txtPriceC.TabIndex = 41;
             this.txtPriceC.Text = "00,00";
             this.txtPriceC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -481,7 +481,7 @@ namespace POSales
             // 
             this.txtPriceB.Location = new System.Drawing.Point(459, 209);
             this.txtPriceB.Name = "txtPriceB";
-            this.txtPriceB.Size = new System.Drawing.Size(194, 30);
+            this.txtPriceB.Size = new System.Drawing.Size(194, 26);
             this.txtPriceB.TabIndex = 42;
             this.txtPriceB.Text = "00,00";
             this.txtPriceB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -491,7 +491,7 @@ namespace POSales
             // 
             this.txtPriceA.Location = new System.Drawing.Point(459, 173);
             this.txtPriceA.Name = "txtPriceA";
-            this.txtPriceA.Size = new System.Drawing.Size(194, 30);
+            this.txtPriceA.Size = new System.Drawing.Size(194, 26);
             this.txtPriceA.TabIndex = 43;
             this.txtPriceA.Text = "00,00";
             this.txtPriceA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -526,7 +526,7 @@ namespace POSales
             this.label22.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(24, 412);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(114, 20);
+            this.label22.Size = new System.Drawing.Size(92, 17);
             this.label22.TabIndex = 48;
             this.label22.Text = "Unidad x caja:";
             // 
@@ -534,7 +534,7 @@ namespace POSales
             // 
             this.txtUnidadCaja.Location = new System.Drawing.Point(162, 402);
             this.txtUnidadCaja.Name = "txtUnidadCaja";
-            this.txtUnidadCaja.Size = new System.Drawing.Size(122, 30);
+            this.txtUnidadCaja.Size = new System.Drawing.Size(122, 26);
             this.txtUnidadCaja.TabIndex = 49;
             this.txtUnidadCaja.Text = "0";
             this.txtUnidadCaja.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -546,7 +546,7 @@ namespace POSales
             this.label23.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(24, 438);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(85, 20);
+            this.label23.Size = new System.Drawing.Size(69, 17);
             this.label23.TabIndex = 50;
             this.label23.Text = "Peso Item:";
             // 
@@ -554,7 +554,7 @@ namespace POSales
             // 
             this.txtPesoItem.Location = new System.Drawing.Point(162, 433);
             this.txtPesoItem.Name = "txtPesoItem";
-            this.txtPesoItem.Size = new System.Drawing.Size(122, 30);
+            this.txtPesoItem.Size = new System.Drawing.Size(122, 26);
             this.txtPesoItem.TabIndex = 51;
             this.txtPesoItem.Text = "0,00";
             this.txtPesoItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -596,7 +596,7 @@ namespace POSales
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(24, 463);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 20);
+            this.label10.Size = new System.Drawing.Size(65, 17);
             this.label10.TabIndex = 57;
             this.label10.Text = "Comision:";
             // 
@@ -604,7 +604,7 @@ namespace POSales
             // 
             this.txtComision.Location = new System.Drawing.Point(162, 456);
             this.txtComision.Name = "txtComision";
-            this.txtComision.Size = new System.Drawing.Size(122, 30);
+            this.txtComision.Size = new System.Drawing.Size(122, 26);
             this.txtComision.TabIndex = 58;
             this.txtComision.Text = "0,00";
             this.txtComision.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -614,7 +614,7 @@ namespace POSales
             // 
             this.txtDescMax.Location = new System.Drawing.Point(162, 484);
             this.txtDescMax.Name = "txtDescMax";
-            this.txtDescMax.Size = new System.Drawing.Size(122, 30);
+            this.txtDescMax.Size = new System.Drawing.Size(122, 26);
             this.txtDescMax.TabIndex = 60;
             this.txtDescMax.Text = "0,00";
             this.txtDescMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -626,7 +626,7 @@ namespace POSales
             this.label20.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(24, 494);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(86, 20);
+            this.label20.Size = new System.Drawing.Size(69, 17);
             this.label20.TabIndex = 59;
             this.label20.Text = "Desc.Max:";
             // 
@@ -634,7 +634,7 @@ namespace POSales
             // 
             this.txtUnidad.Location = new System.Drawing.Point(459, 484);
             this.txtUnidad.Name = "txtUnidad";
-            this.txtUnidad.Size = new System.Drawing.Size(122, 30);
+            this.txtUnidad.Size = new System.Drawing.Size(122, 26);
             this.txtUnidad.TabIndex = 68;
             this.txtUnidad.Text = "0";
             this.txtUnidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -646,7 +646,7 @@ namespace POSales
             this.label21.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(334, 489);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(66, 20);
+            this.label21.Size = new System.Drawing.Size(53, 17);
             this.label21.TabIndex = 67;
             this.label21.Text = "Unidad:";
             // 
@@ -654,7 +654,7 @@ namespace POSales
             // 
             this.txtCosto.Location = new System.Drawing.Point(459, 456);
             this.txtCosto.Name = "txtCosto";
-            this.txtCosto.Size = new System.Drawing.Size(122, 30);
+            this.txtCosto.Size = new System.Drawing.Size(122, 26);
             this.txtCosto.TabIndex = 66;
             this.txtCosto.Text = "00,00";
             this.txtCosto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -666,7 +666,7 @@ namespace POSales
             this.label24.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(344, 458);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(56, 20);
+            this.label24.Size = new System.Drawing.Size(46, 17);
             this.label24.TabIndex = 65;
             this.label24.Text = "Costo:";
             // 
@@ -674,7 +674,7 @@ namespace POSales
             // 
             this.txtStockMax.Location = new System.Drawing.Point(459, 433);
             this.txtStockMax.Name = "txtStockMax";
-            this.txtStockMax.Size = new System.Drawing.Size(122, 30);
+            this.txtStockMax.Size = new System.Drawing.Size(122, 26);
             this.txtStockMax.TabIndex = 64;
             this.txtStockMax.Text = "0";
             this.txtStockMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -686,7 +686,7 @@ namespace POSales
             this.label25.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(318, 433);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(87, 20);
+            this.label25.Size = new System.Drawing.Size(73, 17);
             this.label25.TabIndex = 63;
             this.label25.Text = "Stock max:";
             // 
@@ -694,7 +694,7 @@ namespace POSales
             // 
             this.txtStockMin.Location = new System.Drawing.Point(459, 402);
             this.txtStockMin.Name = "txtStockMin";
-            this.txtStockMin.Size = new System.Drawing.Size(122, 30);
+            this.txtStockMin.Size = new System.Drawing.Size(122, 26);
             this.txtStockMin.TabIndex = 62;
             this.txtStockMin.Text = "0";
             this.txtStockMin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -706,7 +706,7 @@ namespace POSales
             this.label26.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(318, 402);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(82, 20);
+            this.label26.Size = new System.Drawing.Size(69, 17);
             this.label26.TabIndex = 61;
             this.label26.Text = "Stock min:";
             // 
@@ -716,7 +716,7 @@ namespace POSales
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(634, 407);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 20);
+            this.label8.Size = new System.Drawing.Size(38, 17);
             this.label8.TabIndex = 69;
             this.label8.Text = "%ICE:";
             // 
@@ -724,7 +724,7 @@ namespace POSales
             // 
             this.txtValorIce.Location = new System.Drawing.Point(692, 448);
             this.txtValorIce.Name = "txtValorIce";
-            this.txtValorIce.Size = new System.Drawing.Size(122, 30);
+            this.txtValorIce.Size = new System.Drawing.Size(122, 26);
             this.txtValorIce.TabIndex = 72;
             this.txtValorIce.Text = "00,00";
             this.txtValorIce.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -736,7 +736,7 @@ namespace POSales
             this.label27.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(605, 453);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(81, 20);
+            this.label27.Size = new System.Drawing.Size(64, 17);
             this.label27.TabIndex = 71;
             this.label27.Text = "Valor ICE:";
             // 
@@ -760,32 +760,32 @@ namespace POSales
             this.picBrowse.TabStop = false;
             this.picBrowse.Click += new System.EventHandler(this.picBrowse_Click);
             // 
-            // txtCatA
+            // txtCateA
             // 
             this.txtCatA.Location = new System.Drawing.Point(163, 550);
-            this.txtCatA.Name = "txtCatA";
-            this.txtCatA.Size = new System.Drawing.Size(121, 30);
+            this.txtCatA.Name = "txtCateA";
+            this.txtCatA.Size = new System.Drawing.Size(121, 26);
             this.txtCatA.TabIndex = 82;
             // 
             // txtCatB
             // 
             this.txtCatB.Location = new System.Drawing.Point(163, 586);
             this.txtCatB.Name = "txtCatB";
-            this.txtCatB.Size = new System.Drawing.Size(121, 30);
+            this.txtCatB.Size = new System.Drawing.Size(121, 26);
             this.txtCatB.TabIndex = 81;
             // 
             // txtCatC
             // 
             this.txtCatC.Location = new System.Drawing.Point(163, 622);
             this.txtCatC.Name = "txtCatC";
-            this.txtCatC.Size = new System.Drawing.Size(121, 30);
+            this.txtCatC.Size = new System.Drawing.Size(121, 26);
             this.txtCatC.TabIndex = 80;
             // 
             // txtCatD
             // 
             this.txtCatD.Location = new System.Drawing.Point(163, 658);
             this.txtCatD.Name = "txtCatD";
-            this.txtCatD.Size = new System.Drawing.Size(121, 30);
+            this.txtCatD.Size = new System.Drawing.Size(121, 26);
             this.txtCatD.TabIndex = 76;
             // 
             // label31
@@ -794,7 +794,7 @@ namespace POSales
             this.label31.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(24, 550);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(103, 20);
+            this.label31.Size = new System.Drawing.Size(84, 17);
             this.label31.TabIndex = 83;
             this.label31.Text = "Categoria A:";
             // 
@@ -804,7 +804,7 @@ namespace POSales
             this.label32.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(24, 586);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(101, 20);
+            this.label32.Size = new System.Drawing.Size(82, 17);
             this.label32.TabIndex = 87;
             this.label32.Text = "Categoria B:";
             // 
@@ -814,7 +814,7 @@ namespace POSales
             this.label33.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.Location = new System.Drawing.Point(24, 622);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(104, 20);
+            this.label33.Size = new System.Drawing.Size(84, 17);
             this.label33.TabIndex = 88;
             this.label33.Text = "Categoria C:";
             // 
@@ -824,7 +824,7 @@ namespace POSales
             this.label34.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(24, 658);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(103, 20);
+            this.label34.Size = new System.Drawing.Size(84, 17);
             this.label34.TabIndex = 89;
             this.label34.Text = "Categoria D:";
             // 
@@ -834,7 +834,7 @@ namespace POSales
             this.label35.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(24, 689);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(100, 20);
+            this.label35.Size = new System.Drawing.Size(81, 17);
             this.label35.TabIndex = 90;
             this.label35.Text = "Categoria E:";
             // 
@@ -842,7 +842,7 @@ namespace POSales
             // 
             this.txtCatE.Location = new System.Drawing.Point(163, 694);
             this.txtCatE.Name = "txtCatE";
-            this.txtCatE.Size = new System.Drawing.Size(121, 30);
+            this.txtCatE.Size = new System.Drawing.Size(121, 26);
             this.txtCatE.TabIndex = 91;
             // 
             // chckServicio
@@ -850,7 +850,7 @@ namespace POSales
             this.chckServicio.AutoSize = true;
             this.chckServicio.Location = new System.Drawing.Point(322, 554);
             this.chckServicio.Name = "chckServicio";
-            this.chckServicio.Size = new System.Drawing.Size(102, 26);
+            this.chckServicio.Size = new System.Drawing.Size(86, 24);
             this.chckServicio.TabIndex = 92;
             this.chckServicio.Text = "Servicio";
             this.chckServicio.UseVisualStyleBackColor = true;
@@ -860,7 +860,7 @@ namespace POSales
             this.chckAplicaSeries.AutoSize = true;
             this.chckAplicaSeries.Location = new System.Drawing.Point(322, 590);
             this.chckAplicaSeries.Name = "chckAplicaSeries";
-            this.chckAplicaSeries.Size = new System.Drawing.Size(143, 26);
+            this.chckAplicaSeries.Size = new System.Drawing.Size(119, 24);
             this.chckAplicaSeries.TabIndex = 93;
             this.chckAplicaSeries.Text = "Aplica series";
             this.chckAplicaSeries.UseVisualStyleBackColor = true;
@@ -870,7 +870,7 @@ namespace POSales
             this.chckCombo.AutoSize = true;
             this.chckCombo.Location = new System.Drawing.Point(483, 554);
             this.chckCombo.Name = "chckCombo";
-            this.chckCombo.Size = new System.Drawing.Size(98, 26);
+            this.chckCombo.Size = new System.Drawing.Size(81, 24);
             this.chckCombo.TabIndex = 94;
             this.chckCombo.Text = "combo";
             this.chckCombo.UseVisualStyleBackColor = true;
@@ -880,7 +880,7 @@ namespace POSales
             this.chckNegativo.AutoSize = true;
             this.chckNegativo.Location = new System.Drawing.Point(322, 626);
             this.chckNegativo.Name = "chckNegativo";
-            this.chckNegativo.Size = new System.Drawing.Size(119, 26);
+            this.chckNegativo.Size = new System.Drawing.Size(97, 24);
             this.chckNegativo.TabIndex = 95;
             this.chckNegativo.Text = "Negativo";
             this.chckNegativo.UseVisualStyleBackColor = true;
@@ -890,7 +890,7 @@ namespace POSales
             this.chkGasto.AutoSize = true;
             this.chkGasto.Location = new System.Drawing.Point(483, 590);
             this.chkGasto.Name = "chkGasto";
-            this.chkGasto.Size = new System.Drawing.Size(88, 26);
+            this.chkGasto.Size = new System.Drawing.Size(72, 24);
             this.chkGasto.TabIndex = 96;
             this.chkGasto.Text = "Gasto";
             this.chkGasto.UseVisualStyleBackColor = true;
@@ -910,7 +910,7 @@ namespace POSales
             this.textBox24.Enabled = false;
             this.textBox24.Location = new System.Drawing.Point(672, 209);
             this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(95, 30);
+            this.textBox24.Size = new System.Drawing.Size(95, 26);
             this.textBox24.TabIndex = 99;
             this.textBox24.Text = "00,00";
             this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -920,7 +920,7 @@ namespace POSales
             this.textBox25.Enabled = false;
             this.textBox25.Location = new System.Drawing.Point(672, 245);
             this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(95, 30);
+            this.textBox25.Size = new System.Drawing.Size(95, 26);
             this.textBox25.TabIndex = 98;
             this.textBox25.Text = "00,00";
             this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -930,7 +930,7 @@ namespace POSales
             this.textBox26.Enabled = false;
             this.textBox26.Location = new System.Drawing.Point(672, 281);
             this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(95, 30);
+            this.textBox26.Size = new System.Drawing.Size(95, 26);
             this.textBox26.TabIndex = 97;
             this.textBox26.Text = "00,00";
             this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -939,7 +939,7 @@ namespace POSales
             // 
             this.txtIce.Location = new System.Drawing.Point(692, 402);
             this.txtIce.Name = "txtIce";
-            this.txtIce.Size = new System.Drawing.Size(122, 30);
+            this.txtIce.Size = new System.Drawing.Size(122, 26);
             this.txtIce.TabIndex = 70;
             this.txtIce.Text = "00,00";
             this.txtIce.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -950,7 +950,7 @@ namespace POSales
             this.txtIva.Enabled = false;
             this.txtIva.Location = new System.Drawing.Point(538, 130);
             this.txtIva.Name = "txtIva";
-            this.txtIva.Size = new System.Drawing.Size(73, 30);
+            this.txtIva.Size = new System.Drawing.Size(73, 26);
             this.txtIva.TabIndex = 101;
             this.txtIva.Text = "00,00";
             this.txtIva.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -958,7 +958,7 @@ namespace POSales
             // 
             // ItemModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1163, 729);
             this.Controls.Add(this.txtIva);

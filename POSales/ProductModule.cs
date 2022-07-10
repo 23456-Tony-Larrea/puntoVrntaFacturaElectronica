@@ -18,7 +18,11 @@ namespace POSales
         DBConnect dbcon = new DBConnect();
         string stitle = "Point Of Sales";
         Product product;
+<<<<<<< HEAD
         public ProductModule( Product pd)
+=======
+        public ProductModule(Product pd)
+>>>>>>> ce17bc2408d257a7e39e050932d5cd8a85a37b26
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
