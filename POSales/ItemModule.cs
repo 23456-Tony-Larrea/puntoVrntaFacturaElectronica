@@ -211,11 +211,11 @@ namespace POSales
                     item.imagen= bytes;
                     item.imagenUrl= txtReason.Text;
                     item.montoTotal= decimal.Parse(txtPriceA.Text) * decimal.Parse(txtIva.Text);
-                    item.categoriaA= txtCatA.Text;
-                    item.categoriaB= txtCatB.Text;
-                    item.categoriaC= txtCatC.Text;
-                    item.categoriaD= txtCatD.Text;
-                    item.categoriaE= txtCatE.Text;
+                    item.categoriasA= txtCatA.Text;
+                    item.categoriasB = txtCatB.Text;
+                    item.categoriasC = txtCatC.Text;
+                    item.categoriasD = txtCatD.Text;
+                    item.categoriasE = txtCatE.Text;
                     DBConnect db = new DBConnect();
                    string Error = db.ActualizarItem(item);
                     if (string.IsNullOrEmpty(Error))
