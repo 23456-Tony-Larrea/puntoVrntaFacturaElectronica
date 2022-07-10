@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 namespace POSalesDb
 {
-   public partial class Items
+   public class Items 
     {
 		public int Id { get; set; }
 		//agrega este campo ala base 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POSalesDb;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,11 @@ namespace POSales
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Item());
+            Items item = new Items();
+            //item.Id = 1;
+            //item=Item.cargarItem(item);
+
+            Application.Run(new Login());
         }
     }
 }

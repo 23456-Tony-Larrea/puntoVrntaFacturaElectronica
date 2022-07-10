@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Reporting.WinForms;
-
+using POSalesDB;
 namespace POSales
 {
     public partial class POSReport : Form

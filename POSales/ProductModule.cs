@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using POSalesDB;
 namespace POSales
 {
     public partial class ProductModule : Form
@@ -17,8 +17,8 @@ namespace POSales
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
         string stitle = "Point Of Sales";
-        Item product;
-        public ProductModule(Item pd)
+        Product product;
+        public ProductModule( Product pd)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
@@ -82,7 +82,7 @@ namespace POSales
                     cn.Close();
                     MessageBox.Show("Producto guardado con exito.", stitle);
                     Clear();
-                    product.cargarItem();
+                    product.LoadProduct();
                 }
 
             }
@@ -115,7 +115,7 @@ namespace POSales
                     cn.Open();
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Product has been successfully updated.", stitle);
+                    MessageBox.Show("Producto actualizado con exito .", stitle);
                     Clear();
                     this.Dispose();
                 }

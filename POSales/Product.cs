@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using POSalesDB;
 namespace POSales
 {
     public partial class Product : Form
@@ -28,7 +28,7 @@ namespace POSales
         {
             int i = 0;
             dgvProduct.Rows.Clear();
-            cm = new SqlCommand("SELECT p.codigo, p.codigoBarras, p.pDesc, b.brand, c.category, p.precio, p.reorder FROM Productos AS p INNER JOIN Marcas AS b ON b.id = p.bid INNER JOIN Categorias AS c on c.id = p.cid WHERE CONCAT(p.pDesc, b.marca, c.categoria) LIKE '%" +txtSearch.Text+ "%'",cn);
+            cm = new SqlCommand("SELECT p.codigo, p.codigoBarras, p.pDesc, b.marca, c.categoria, p.precio, p.reorder FROM Productos AS p INNER JOIN Marcas AS b ON b.id = p.bid INNER JOIN Categorias AS c on c.id = p.cid WHERE CONCAT(p.pDesc, b.marca, c.categoria) LIKE '%" +txtSearch.Text+ "%'",cn);
             cn.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())
@@ -70,7 +70,7 @@ namespace POSales
                 if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("DELETE FROM tbProduct WHERE pcode LIKE '" + dgvProduct[1, e.RowIndex].Value.ToString() + "'", cn);
+                    cm = new SqlCommand("DELETE FROM Productos WHERE codigo LIKE '" + dgvProduct[1, e.RowIndex].Value.ToString() + "'", cn);
                     cm.ExecuteNonQuery();
                     cn.Close();
                     MessageBox.Show("Product has been successfully deleted.", "Point Of Sales", MessageBoxButtons.OK, MessageBoxIcon.Information);

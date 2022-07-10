@@ -275,6 +275,7 @@ namespace POSales
             // 
             // cboBrand
             // 
+            this.cboBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBrand.FormattingEnabled = true;
             this.cboBrand.Location = new System.Drawing.Point(963, 90);
             this.cboBrand.Name = "cboBrand";
@@ -284,6 +285,7 @@ namespace POSales
             // 
             // cboCategory
             // 
+            this.cboCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCategory.FormattingEnabled = true;
             this.cboCategory.Location = new System.Drawing.Point(963, 126);
             this.cboCategory.Name = "cboCategory";
@@ -298,6 +300,7 @@ namespace POSales
             this.txtPriceD.TabIndex = 15;
             this.txtPriceD.Text = "00,00";
             this.txtPriceD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPriceD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPriceD_KeyPress);
             // 
             // label9
             // 
@@ -310,6 +313,7 @@ namespace POSales
             // 
             // cboGroup
             // 
+            this.cboGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboGroup.FormattingEnabled = true;
             this.cboGroup.Location = new System.Drawing.Point(963, 54);
             this.cboGroup.Name = "cboGroup";
@@ -327,6 +331,7 @@ namespace POSales
             // 
             // cboBodega
             // 
+            this.cboBodega.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBodega.FormattingEnabled = true;
             this.cboBodega.Location = new System.Drawing.Point(963, 159);
             this.cboBodega.Name = "cboBodega";
@@ -432,6 +437,7 @@ namespace POSales
             this.HasIva.TabIndex = 35;
             this.HasIva.Text = "IVA";
             this.HasIva.UseVisualStyleBackColor = true;
+            this.HasIva.CheckedChanged += new System.EventHandler(this.HasIva_CheckedChanged);
             // 
             // label17
             // 
@@ -468,6 +474,8 @@ namespace POSales
             this.txtPriceC.TabIndex = 41;
             this.txtPriceC.Text = "00,00";
             this.txtPriceC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPriceC.TextChanged += new System.EventHandler(this.txtPriceC_TextChanged);
+            this.txtPriceC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPriceC_KeyPress);
             // 
             // txtPriceB
             // 
@@ -477,6 +485,7 @@ namespace POSales
             this.txtPriceB.TabIndex = 42;
             this.txtPriceB.Text = "00,00";
             this.txtPriceB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPriceB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPriceB_KeyPress);
             // 
             // txtPriceA
             // 
@@ -487,6 +496,7 @@ namespace POSales
             this.txtPriceA.Text = "00,00";
             this.txtPriceA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPriceA.TextChanged += new System.EventHandler(this.txtPriceA_TextChanged);
+            this.txtPriceA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPriceA_KeyPress);
             // 
             // pictureBox1
             // 
@@ -528,6 +538,7 @@ namespace POSales
             this.txtUnidadCaja.TabIndex = 49;
             this.txtUnidadCaja.Text = "0";
             this.txtUnidadCaja.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUnidadCaja.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStockMin_KeyPress);
             // 
             // label23
             // 
@@ -547,6 +558,7 @@ namespace POSales
             this.txtPesoItem.TabIndex = 51;
             this.txtPesoItem.Text = "0,00";
             this.txtPesoItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPesoItem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIce_KeyPress);
             // 
             // pictureBox3
             // 
@@ -596,6 +608,7 @@ namespace POSales
             this.txtComision.TabIndex = 58;
             this.txtComision.Text = "0,00";
             this.txtComision.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtComision.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIce_KeyPress);
             // 
             // txtDescMax
             // 
@@ -605,6 +618,7 @@ namespace POSales
             this.txtDescMax.TabIndex = 60;
             this.txtDescMax.Text = "0,00";
             this.txtDescMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDescMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIce_KeyPress);
             // 
             // label20
             // 
@@ -624,6 +638,7 @@ namespace POSales
             this.txtUnidad.TabIndex = 68;
             this.txtUnidad.Text = "0";
             this.txtUnidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUnidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStockMin_KeyPress);
             // 
             // label21
             // 
@@ -643,6 +658,7 @@ namespace POSales
             this.txtCosto.TabIndex = 66;
             this.txtCosto.Text = "00,00";
             this.txtCosto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCosto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIce_KeyPress);
             // 
             // label24
             // 
@@ -662,6 +678,7 @@ namespace POSales
             this.txtStockMax.TabIndex = 64;
             this.txtStockMax.Text = "0";
             this.txtStockMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtStockMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStockMin_KeyPress);
             // 
             // label25
             // 
@@ -681,6 +698,7 @@ namespace POSales
             this.txtStockMin.TabIndex = 62;
             this.txtStockMin.Text = "0";
             this.txtStockMin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtStockMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStockMin_KeyPress);
             // 
             // label26
             // 
@@ -710,6 +728,7 @@ namespace POSales
             this.txtValorIce.TabIndex = 72;
             this.txtValorIce.Text = "00,00";
             this.txtValorIce.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtValorIce.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIce_KeyPress);
             // 
             // label27
             // 
@@ -878,6 +897,7 @@ namespace POSales
             // 
             // valA
             // 
+            this.valA.Enabled = false;
             this.valA.Location = new System.Drawing.Point(672, 173);
             this.valA.Name = "valA";
             this.valA.Size = new System.Drawing.Size(95, 30);
@@ -887,6 +907,7 @@ namespace POSales
             // 
             // textBox24
             // 
+            this.textBox24.Enabled = false;
             this.textBox24.Location = new System.Drawing.Point(672, 209);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(95, 30);
@@ -896,6 +917,7 @@ namespace POSales
             // 
             // textBox25
             // 
+            this.textBox25.Enabled = false;
             this.textBox25.Location = new System.Drawing.Point(672, 245);
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(95, 30);
@@ -905,6 +927,7 @@ namespace POSales
             // 
             // textBox26
             // 
+            this.textBox26.Enabled = false;
             this.textBox26.Location = new System.Drawing.Point(672, 281);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(95, 30);
@@ -920,15 +943,18 @@ namespace POSales
             this.txtIce.TabIndex = 70;
             this.txtIce.Text = "00,00";
             this.txtIce.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIce.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIce_KeyPress);
             // 
             // txtIva
             // 
+            this.txtIva.Enabled = false;
             this.txtIva.Location = new System.Drawing.Point(538, 130);
             this.txtIva.Name = "txtIva";
             this.txtIva.Size = new System.Drawing.Size(73, 30);
             this.txtIva.TabIndex = 101;
             this.txtIva.Text = "00,00";
             this.txtIva.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIva.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIva_KeyPress);
             // 
             // ItemModule
             // 

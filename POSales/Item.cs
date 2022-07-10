@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using POSalesDB;
 
 namespace POSales
 {
@@ -16,7 +17,7 @@ namespace POSales
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
-        DBConnect dbcon = new DBConnect();
+         DBConnect dbcon = new DBConnect();
         SqlDataReader dr;
         public Item()
         {
@@ -32,7 +33,7 @@ namespace POSales
                 dgvItem.DataSource = repo.GetAll<Items>("Items");
             }
         }
-
+        
         private void dgvBodega_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             

@@ -56,7 +56,7 @@ namespace POSalesDb
 
 
             }
-        
+
         //public async Task UpdateAsync(T t)
         //{
         //    var updateQuery = GenerateUpdateQuery();

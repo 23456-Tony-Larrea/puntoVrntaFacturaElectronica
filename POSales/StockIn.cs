@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using POSalesDB;
 namespace POSales
 {
     public partial class StockIn : Form
@@ -56,6 +56,10 @@ namespace POSales
             dr.Close();
             cn.Close();
             cbSupplier.Text = supplier;
+
+            int val = 0;
+            int.TryParse(supplier, out val);
+            
         }
 
         public void LoadStockIn()

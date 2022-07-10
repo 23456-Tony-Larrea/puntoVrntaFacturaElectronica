@@ -1,5 +1,6 @@
 ﻿
 using POSalesDb;
+using POSalesDB;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -157,6 +158,7 @@ namespace POSales
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            Items item = new Items();
             picBrowse.Visible = false;
             picItem.Enabled = false;
             MemoryStream ms = new MemoryStream();
@@ -168,54 +170,66 @@ namespace POSales
             {
                 if (MessageBox.Show("Estas seguro de actualizar este Item?", "Actualizar producto", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    cm = new SqlCommand("UPDATE Items SET nombre=@nombre,codigoUno=@codigoUno,codigoDos=@codigoDos,codigoTres=@codigoTres,codigoCuatro=@codigoCuatro,precioA=@precioA,precioB=@precioB,precioC=@precioC,precioD=@precioD,descripcion=@descripcion,unidadCaja=@unidadCaja,peso=@peso,comision=@comision,descMax=@descMax,stockMin=@stockMin,stockMax=@stockMax,costo=@costo,unidad=@unidad,bId=@bId,cId=@cId ,gId=@gId,mId=@mId,servicio=@servicio,aplicaSeries=@aplicaSeries,negativo=@negativo,combo=@combo,gasto=@gasto,ice=@ice,valorIce=@valorIce,imagen=@imagen,imagenUrl=@imagenUrl,iva=@iva,montoTotal=@montoTotal,HasIva=HasIva,categoriaA=@categoriaA,categoriaB=@categoriaB,categoriaC=@categoriaC,categoriaD=@categoriaD,categoriaE=@categoriaE   WHERE Id like'" + txtIdProd.Text + "'", cn);
-                    cm.Parameters.AddWithValue("@nombre", txtNameProdcut.Text);
-                    cm.Parameters.AddWithValue("@codigoUno", txtCodUno.Text);
-                    cm.Parameters.AddWithValue("@codigoDos", txtCodDos.Text);
-                    cm.Parameters.AddWithValue("@codigoTres", txtCod3.Text);
-                    cm.Parameters.AddWithValue("@codigoCuatro", txtCod4.Text);
-                    cm.Parameters.AddWithValue("@codigoBarras", txtBarcode.Text);
-                    cm.Parameters.AddWithValue("@precioA", decimal.Parse(txtPriceA.Text));
-                    cm.Parameters.AddWithValue("@precioB", decimal.Parse(txtPriceB.Text));
-                    cm.Parameters.AddWithValue("@precioC", decimal.Parse(txtPriceC.Text));
-                    cm.Parameters.AddWithValue("@precioD", decimal.Parse(txtPriceD.Text));
-                    cm.Parameters.AddWithValue("@descripcion", txtReason.Text);
-                    cm.Parameters.AddWithValue("@unidadCaja", int.Parse(txtUnidadCaja.Text));
-                    cm.Parameters.AddWithValue("@peso", decimal.Parse(txtPesoItem.Text));
-                    cm.Parameters.AddWithValue("@comision", decimal.Parse(txtComision.Text));
-                    cm.Parameters.AddWithValue("@descMax", decimal.Parse(txtDescMax.Text));
-                    cm.Parameters.AddWithValue("@stockMax", int.Parse(txtStockMax.Text));
-                    cm.Parameters.AddWithValue("@stockMin", int.Parse(txtStockMin.Text));
-                    cm.Parameters.AddWithValue("@costo", decimal.Parse(txtCosto.Text));
-                    cm.Parameters.AddWithValue("@unidad", int.Parse(txtUnidad.Text));
-                    cm.Parameters.AddWithValue("@bId", cboBodega.SelectedValue);
-                    cm.Parameters.AddWithValue("@cId", cboCategory.SelectedValue);
-                    cm.Parameters.AddWithValue("@gId", cboGroup.SelectedValue);
-                    cm.Parameters.AddWithValue("@mId", cboBrand.SelectedValue);
-                    cm.Parameters.AddWithValue("@servicio", chckServicio.Checked);
-                    cm.Parameters.AddWithValue("@aplicaSeries", chckAplicaSeries.Checked);
-                    cm.Parameters.AddWithValue("@negativo", chckNegativo.Checked);
-                    cm.Parameters.AddWithValue("@combo", chckCombo.Checked);
-                    cm.Parameters.AddWithValue("@gasto", chkGasto.Checked);
-                    cm.Parameters.AddWithValue("@ice", decimal.Parse(txtIce.Text));
-                    cm.Parameters.AddWithValue("@valorIce", decimal.Parse(txtValorIce.Text));
-                    cm.Parameters.AddWithValue("@HasIva", HasIva.Checked);
-                    cm.Parameters.AddWithValue("@iva", decimal.Parse(txtIva.Text));
-                    cm.Parameters.AddWithValue("@imagen", bytes);
-                    cm.Parameters.AddWithValue("@imagenUrl", txtReason.Text);
-                    cm.Parameters.AddWithValue("@montoTotal", decimal.Parse(txtPriceA.Text) * decimal.Parse(txtIva.Text));
-                    cm.Parameters.AddWithValue("@categoriaA", txtCatA.Text);
-                    cm.Parameters.AddWithValue("@categoriaB", txtCatB.Text);
-                    cm.Parameters.AddWithValue("@categoriaC", txtCatC.Text);
-                    cm.Parameters.AddWithValue("@categoriaD", txtCatD.Text);
-                    cm.Parameters.AddWithValue("@categoriaE", txtCatE.Text);                    
-                    cn.Open();
-                    cm.ExecuteNonQuery();
-                    cn.Close();
-                    MessageBox.Show("Item ingresado con exito.", stitle);
+                    decimal PrecioA = 0, PrecioB = 0, PrecioC = 0, PrecioD = 0;
+                    item.nombre = txtNameProdcut.Text;
+                    item.codigoUno = txtCodUno.Text;
+                    item.codigoDos = txtCodDos.Text;
+                    item.codigoTres = txtCod3.Text;
+                    item.codigoCuatro = txtCod4.Text;
+                    item.codigoBarras = txtCod3.Text;
+                    item.codigoCuatro = txtCod4.Text;
+                    decimal.TryParse(txtPriceA.Text, out PrecioA);
+                    item.precioA = PrecioA;
+                    decimal.TryParse(txtPriceB.Text, out PrecioB);
+                    item.precioB = PrecioB;
+                    decimal.TryParse(txtPriceC.Text, out PrecioC);
+                    item.precioC = PrecioC;
+                    decimal.TryParse(txtPriceD.Text, out PrecioD);
+                    item.precioD = PrecioD;
+                    item.descripcion= txtReason.Text;
+                    item.unidadCaja= int.Parse(txtUnidadCaja.Text);
+                    item.peso= decimal.Parse(txtPesoItem.Text);
+                    item.comision= decimal.Parse(txtComision.Text);
+                    item.descMax= decimal.Parse(txtDescMax.Text);
+                    item.stockMax= int.Parse(txtStockMax.Text);
+                    item.stockMin= int.Parse(txtStockMin.Text);
+                    item.costo= decimal.Parse(txtCosto.Text);
+                    item.unidad= int.Parse(txtUnidad.Text);
+                    item.bId= cboBodega.SelectedIndex;
+                    item.cId= cboCategory.SelectedIndex;
+                    item.gId= cboGroup.SelectedIndex;
+                    item.mId= cboBrand.SelectedIndex;
+                    item.servicio= chckServicio.Checked;
+                    item.aplicaSeries= chckAplicaSeries.Checked;
+                    item.negativo= chckNegativo.Checked;
+                    item.combo= chckCombo.Checked;
+                    item.gasto= chkGasto.Checked;
+                    item.ice= decimal.Parse(txtIce.Text);
+                    item.valorIce= decimal.Parse(txtValorIce.Text);
+                    item.HasIva= HasIva.Checked;
+                    item.iva= decimal.Parse(txtIva.Text);
+                    item.imagen= bytes;
+                    item.imagenUrl= txtReason.Text;
+                    item.montoTotal= decimal.Parse(txtPriceA.Text) * decimal.Parse(txtIva.Text);
+                    item.categoriaA= txtCatA.Text;
+                    item.categoriaB= txtCatB.Text;
+                    item.categoriaC= txtCatC.Text;
+                    item.categoriaD= txtCatD.Text;
+                    item.categoriaE= txtCatE.Text;
+                    DBConnect db = new DBConnect();
+                   string Error = db.ActualizarItem(item);
+                    if (string.IsNullOrEmpty(Error))
+                    {
+                        MessageBox.Show("Item ingresado con exito.", stitle);
+                    }
+                    else 
+                    {
+                        MessageBox.Show(Error);
+                    }
+                   
                     Clear();
                    
-                    this.Dispose();
+                   
                 }
                 {
 
@@ -284,6 +298,157 @@ namespace POSales
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 picItem.Image = Image.FromFile(openFileDialog.FileName);
+            }
+        }
+
+        private void txtPriceA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(Char.IsDigit(e.KeyChar) || e.KeyChar == '\b')
+            {
+                // Allow Digits and BackSpace char
+            }
+            else if (e.KeyChar == '.' && !((TextBox)sender).Text.Contains(','))
+            {
+                e.KeyChar = ',';
+            }
+            else if (e.KeyChar == ',' && !((TextBox)sender).Text.Contains(','))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPriceB_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar) || e.KeyChar == '\b')
+            {
+                // Allow Digits and BackSpace char
+            }
+            else if (e.KeyChar == '.' && !((TextBox)sender).Text.Contains(','))
+            {
+                e.KeyChar = ',';
+            }
+            else if (e.KeyChar == ',' && !((TextBox)sender).Text.Contains(','))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPriceC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPriceC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar) || e.KeyChar == '\b')
+            {
+                // Allow Digits and BackSpace char
+            }
+            else if (e.KeyChar == '.' && !((TextBox)sender).Text.Contains(','))
+            {
+                e.KeyChar = ',';
+            }
+            else if (e.KeyChar == ',' && !((TextBox)sender).Text.Contains(','))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPriceD_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar) || e.KeyChar == '\b')
+            {
+                // Allow Digits and BackSpace char
+            }
+            else if (e.KeyChar == '.' && !((TextBox)sender).Text.Contains(','))
+            {
+                e.KeyChar = ',';
+            }
+            else if (e.KeyChar == ',' && !((TextBox)sender).Text.Contains(','))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtIva_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar) || e.KeyChar == '\b')
+            {
+                // Allow Digits and BackSpace char
+            }
+            else if (e.KeyChar == '.' && !((TextBox)sender).Text.Contains(','))
+            {
+                e.KeyChar = ',';
+            }
+            else if (e.KeyChar == ',' && !((TextBox)sender).Text.Contains(','))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtIce_KeyPress(object sender, KeyPressEventArgs e)
+        {
+               if(Char.IsDigit(e.KeyChar) || e.KeyChar == '\b')
+            {
+                // Allow Digits and BackSpace char
+            }
+            else if (e.KeyChar == '.' && !((TextBox)sender).Text.Contains(','))
+            {
+                e.KeyChar = ',';
+            }
+            else if (e.KeyChar == ',' && !((TextBox)sender).Text.Contains(','))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtStockMin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar) || e.KeyChar == '\b')
+            {
+                // Allow Digits and BackSpace char
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void HasIva_CheckedChanged(object sender, EventArgs e)
+        {
+            if (HasIva.Checked)
+            {
+                txtIva.Enabled = true;
+                
+            }
+            else
+            {
+                txtIva.Enabled = false;
+                txtIva.Text = "00,00";
             }
         }
     }
